@@ -8,15 +8,6 @@
 - Having this webpage solves issues in future, should I forget how to do something or get lost within code, I'll be able to easily remind myself of what to do. 
 - Throughout this project I have learned the basics of coding HTML, CSS, Git and JavaScript; I've also learned about Gitflow, Bash Commands and Markdown syntax.
 
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
 ## Installation
 
 N/A.
