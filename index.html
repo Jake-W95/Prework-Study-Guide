@@ -85,9 +85,75 @@
       </ul>
     </section>
 
+<<<<<<< HEAD
     <section class="card" id="Useful-acronyms"
     
 
+=======
+    <section class="card" id="useful-acronyms-section">
+      <h2>Useful Acronyms</h2>
+      <ul>
+        <li>API     - Application Programming Interface</li>
+        <li>CI/CD   - Continuous Integration/Deployment</li>
+        <li>CDN     - Content Distribution Network</li>
+        <li>CSS     - Cascading Style Sheets</li>
+        <li>DNS     - Domain Name Service</li>
+        <li>HTML    - HyperText Markup Language</li>
+        <li>HTTP(S) - HyperText Transfer Protocol (Secure)</li>
+        <li>ISP     - Internet Service Provider</li>
+        <li>SSL     - Secure Socket Layer</li>
+        <li>SQL     - Structured Query Language</li>
+        <li>URL     - Uniform Resource Locator</li>
+        <li>VPS     - Virtual Private Server</li>
+        <li>WS(S)   - Web Socket (Secure)</li>          
+      </ul>
+    </section>
+
+    <section class="card" id="app-architecture-types">
+      <h2>Application Architecture Types</h2>
+      <ul>
+        <li><h3>Frontend Only Application</h3> This can range from pure static 
+          html/css/js or a more elaborate single page application built with React,
+          Svelte, Vue, Angular, or with Native Web Components. These sites are usually 
+          deployed using static servers which is essentially what services like Vercel 
+          and Netlify provide or with traditionals hosts where you upload files to some 
+          web server space that are statically served. When using a framework like React 
+          and friends, these services connect your deployment to your project's Github 
+          then anytime you update GitHub it runs your project's build command and serves 
+          the output statically.</li>
+        <li><h3>Full-Stack Applications</h3> These are applications where you create a 
+          more complex server (not static) that does more advanced data manipulation 
+          and then uses that data with a template engine (ejs, blade, erb, plush, pug) 
+          to generate static HTML from the server which is then sent to the client. 
+          This generally needs more robust deployment services so either requires you 
+          to set up your own server using a VPS from Amazon, Microsoft, Google, Linode, 
+          Digital Ocean, or other cloud services or using a service like Heroku which 
+          simplifies many of the setup steps.</li>
+        <li><h3>Backend and Frontend Applications</h3> Nowadays applications are so 
+          complex they are really many applications or "Micro Services" handling 
+          dedicated parts of the application. You may have one backend application 
+          that only handles user authentication while other applications then handle 
+          different products (think of Google's vast array of services). 
+          All these backend microservices will be deployed like a full-stack application 
+          using a service like Heroku while the frontend will be built as a separate 
+          application deployed by a service like Heroku. The frontend application will 
+          make requests to all the API's these microservices deliver. This makes the 
+          architecture more modular and reusable for different client-side platforms 
+          (desktop, mobile, devices).</li>  
+        <li><h3>Serverless</h3> This takes microservices to the next level where you 
+          just don't have backend applications at all. Instead, all your APIs are 
+          built as several cloud functions that run on-demand which then have URLs 
+          for your frontend to call them. Since you don't have to have a persistent 
+          backend server running 24/7 and with the much lower-cost of static hosting 
+          for the frontend, taking a serverless approach can be very affordable even 
+          at large scales. AWS, Azure, and Google all offer cloud function platforms 
+          and Netlify offers a nice abstraction of Amazon's Cloud Functions and Firebase 
+          offers a nice abstraction over Google's Cloud functions service.</li>
+        
+      </ul>
+    </section>
+   
+>>>>>>> 96a69e0537adfd561e43416ecd967bda27ae42fd
     </main>
 
     <footer>
