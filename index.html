@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,6 +8,8 @@
     <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
   </head>
+
+
   <body>
     <header id="top">
       <h1>Prework Study Guide</h1>
@@ -24,6 +27,8 @@
         <li>HTML acts as the foundation of webpages</li>
       </ul>
     </section>
+
+
   
     <section class="card" id="css-section">
       <h2>CSS</h2>
@@ -38,10 +43,19 @@
       </ul>
     </section>
 
+
+
     <section class="card" id="git-section"> 
       <h2>Git</h2>
       <ul>
+        <li>"Git" commands allow the local system to communicate with GitHub</li>
         <li>ALL inputs relating to Git or Github must begin with "git"</li>
+        <li>By cloning and/or pulling Git repositories </li>
+       
+      </ul>
+
+      <h3>Git Commands</h3>
+      <ul>
         <li>"git log" shows the commit history of the currently active branch</li>
         <li>"git status" shows modified files in working directory, staged for the next commit</li>
         <li>"git branch" lists branches with an * appearing on the active branch</li>
@@ -51,19 +65,53 @@
         <li>"git add -A" Stages changes to be commited to GH repository</li>
         <li>"git commit -m "brief overview message" Commits changes and adds message</li>
         <li>"git pull origin (branch-name)" Pulls branch information from selected branch to ensure information in current branch is up to date</li>
-        <li>"git push origin (branch-name) Pushes code from selected branch into GH repository</li>
+        <li>"git push origin (branch-name)" Pushes code from selected branch into GH repository</li>
+        <li>"git checkout -f" Removes tracked files (uncommited)</li>
+        <li>"git clean -fd" Removes untracked files (uncommited)</li>
+        <li>"git stash" Saves tracked file changes for later</li>
+        <li>"git stash -u" Saves tracked AND untracked files for later</li>
+        <li>"git stash pop" Reapplies latest stash after "git pull"</li>
+        <li></li>
       </ul>
+      
     </section>
+
+
 
     <section class="card" id="bash-commands">
       <h2>Bash Commands</h2>
       <ul>
+
         <li>"ls" (List) Lists contents of current directory</li>
         <li>"cd" (Change Directory) Navigates to directory held WITHIN current directory</li>
+
         <li>"cd .." Navigates back one level through directory</li>
-        <li>"mkdir" (Make Directory) Creates a new directory WITHIN current directory </li>
+          <ul>
+            <li>To move up through multiple levels, use "/"</li>
+            <ul>
+            <li>For example: "cd ../../../.."</li>
+            </ul>
+            <li>Also works moving down</li>
+            <ul>
+              <li>For example: "cd documents/bacon_sandwich/Tasty-Bread"</li>
+            </ul>
+
+          </ul>
+
+        <li>"mkdir" (Make Directory) Creates a new directory WITHIN current directory</li>
+        <li>"rm filename" (remove) deletes file</li>
+        <li>"rm -rf directory name (Remove -Recursive_Force) Deletes a directory, even if it contains files</li>
+
+        <li>"mv" (Move) Moves or Renames a file</li>
+         <ul>
+          <li>To move a file enter: "mv filename newlocation"</li>
+          <li>to rename a file enter: "mv filename newfilename"</li>
+        </ul>
+
       </ul>
     </section>
+
+
 
     <section class="card" id="javascript-section">
       <h2>Javascript</h2>
@@ -84,6 +132,8 @@
         </li>
       </ul>
     </section>
+    
+    
 
     <section class="card" id="useful-acronyms-section">
       <h2>Useful Acronyms</h2>
