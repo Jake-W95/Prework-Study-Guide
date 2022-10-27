@@ -1,0 +1,234 @@
+[33mcommit 0945d3290bd9dcb73a9001f1fc7dee796246976d[m[33m ([m[1;36mHEAD -> [m[1;32mfeature/add-html[m[33m, [m[1;31morigin/feature/add-html[m[33m)[m
+Author: PaulKnees <jakewallace368@gmail.com>
+Date:   Mon Oct 17 10:13:19 2022 +0000
+
+    alphabetised acronyms
+
+[33mcommit 433572aa0b32f257eaebfd73ecad0fd9e5d5be9e[m
+Merge: 11f5c54 0467963
+Author: Jake-W95 <115796768+Jake-W95@users.noreply.github.com>
+Date:   Sun Oct 16 20:38:10 2022 +0000
+
+    Merge pull request #20 from Jake-W95/feature/add-html
+    
+    Added more acronyms
+
+[33mcommit 0467963c18c7d2fd0831a345f05fc581e2f91f01[m
+Author: PaulKnees <jakewallace368@gmail.com>
+Date:   Sun Oct 16 21:28:45 2022 +0000
+
+    Added more acronyms
+
+[33mcommit 11f5c540259b79dde2cd17527b28236c0187c8ca[m
+Merge: 04943d3 c46033a
+Author: Jake-W95 <115796768+Jake-W95@users.noreply.github.com>
+Date:   Sun Oct 16 20:10:12 2022 +0000
+
+    Merge pull request #19 from Jake-W95/feature/add-html
+    
+    Added AAT Section
+
+[33mcommit c46033a820d81da3e4dc25ce34604222766ea467[m
+Author: PaulKnees <jakewallace368@gmail.com>
+Date:   Sun Oct 16 21:10:23 2022 +0000
+
+    Added AAT Section
+
+[33mcommit 04943d3e449b3e87d078a57a9ec095fe74507e56[m
+Merge: 3c38c89 1a1c54d
+Author: Jake-W95 <115796768+Jake-W95@users.noreply.github.com>
+Date:   Sun Oct 16 19:20:37 2022 +0000
+
+    Merge pull request #18 from Jake-W95/feature/add-CSS
+    
+    Changed fonts
+
+[33mcommit 1a1c54dfb92c303f99666c3cb9366d4c48182bcb[m[33m ([m[1;32mfeature/add-CSS[m[33m)[m
+Author: PaulKnees <jakewallace368@gmail.com>
+Date:   Sun Oct 16 20:19:51 2022 +0000
+
+    Changed fonts
+
+[33mcommit 3c38c897e9c556e7f5a4cfac47e2a876f9a24b2c[m
+Merge: fa902c1 15a5302
+Author: Jake-W95 <115796768+Jake-W95@users.noreply.github.com>
+Date:   Sun Oct 16 19:07:13 2022 +0000
+
+    Merge pull request #17 from Jake-W95/feature/add-HTML
+    
+    Added "Useful Acronyms" Section
+
+[33mcommit 15a53025bd778b45a6559ed7fbfc3c1157d3a53c[m
+Author: PaulKnees <jakewallace368@gmail.com>
+Date:   Sun Oct 16 20:08:08 2022 +0000
+
+    added Useful Acronyms
+
+[33mcommit fa902c15a2167c90735c5c5f4e95a648ebfc0afd[m
+Merge: 9c807df 413aeb1
+Author: Jake-W95 <115796768+Jake-W95@users.noreply.github.com>
+Date:   Sun Oct 16 18:30:43 2022 +0000
+
+    Merge pull request #16 from Jake-W95/feature/project-README
+    
+    README Update
+
+[33mcommit 413aeb1dabb3cc7211dcc2cef23418d4bb3f2251[m
+Merge: 37af107 9c807df
+Author: PaulKnees <jakewallace368@gmail.com>
+Date:   Sun Oct 16 19:31:14 2022 +0000
+
+    Merge branch 'main' of github.com:Jake-W95/Prework-Study-Guide into feature/project-README
+
+[33mcommit 37af10714502b82dccb83180b70f16820642903d[m
+Author: PaulKnees <jakewallace368@gmail.com>
+Date:   Sun Oct 16 19:30:52 2022 +0000
+
+    Deleted unwanted text
+
+[33mcommit 35b225707a5722c438b10b938767e3fc117643e2[m
+Author: PaulKnees <jakewallace368@gmail.com>
+Date:   Sun Oct 16 19:27:28 2022 +0000
+
+    Updated README file
+
+[33mcommit 9c807df587516a339563d699175418142a365800[m
+Merge: dc06fe4 35b2257
+Author: Jake-W95 <115796768+Jake-W95@users.noreply.github.com>
+Date:   Sun Oct 16 18:26:34 2022 +0000
+
+    Merge pull request #15 from Jake-W95/feature/project-README
+    
+    Updated README
+
+[33mcommit dc06fe4615f09114c8596d3ac8f3787b01e2269a[m
+Merge: e22e997 142aa36
+Author: Jake-W95 <115796768+Jake-W95@users.noreply.github.com>
+Date:   Sun Oct 16 15:14:18 2022 +0000
+
+    Merge pull request #14 from Jake-W95/feature/add-js
+    
+    Improved JavaScript and added JS Notes
+
+[33mcommit 142aa36765635b38bcdd60d3ce62afef05f99085[m[33m ([m[1;31morigin/feature/add-js[m[33m, [m[1;32mfeature/add-js[m[33m)[m
+Merge: 32321b3 e22e997
+Author: PaulKnees <jakewallace368@gmail.com>
+Date:   Sun Oct 16 16:09:02 2022 +0000
+
+    Merge branch 'main' of github.com:Jake-W95/Prework-Study-Guide into feature/add-js
+
+[33mcommit 32321b3e4fff13a80eaff7b9b59e90a684408184[m
+Author: PaulKnees <jakewallace368@gmail.com>
+Date:   Sun Oct 16 16:08:33 2022 +0000
+
+    Added more robust JavaScript and improved HMTL notes & structure
+
+[33mcommit b9e57eab0d56e6d7b9991155ab4daaf6a0fb327e[m
+Merge: e9905cb b9abe03
+Author: PaulKnees <jakewallace368@gmail.com>
+Date:   Sun Oct 16 15:00:32 2022 +0000
+
+    Added JavaScript
+
+[33mcommit e9905cb645860b2962ab0394fb25a58b2576d624[m
+Author: PaulKnees <jakewallace368@gmail.com>
+Date:   Sun Oct 16 14:58:50 2022 +0000
+
+    Added JavaScript
+
+[33mcommit e22e997fe0266184f6019261a5c6146194016cb9[m
+Merge: b9abe03 b9e57ea
+Author: Jake-W95 <115796768+Jake-W95@users.noreply.github.com>
+Date:   Sun Oct 16 14:04:15 2022 +0000
+
+    Merge pull request #13 from Jake-W95/feature/add-js
+    
+    Added initial JavaScript
+
+[33mcommit b9abe0338991049e532828b901009f8ea9d6a5ad[m
+Author: PaulKnees <jakewallace368@gmail.com>
+Date:   Sun Oct 16 13:29:38 2022 +0000
+
+    re-added CSS to project
+
+[33mcommit c2601c0df17249767b6d6d7beea79b083928e5ae[m
+Author: PaulKnees <jakewallace368@gmail.com>
+Date:   Sun Oct 16 12:04:33 2022 +0000
+
+    possibly fixed
+
+[33mcommit b39461cb3517e24aeffacade79f4b4683d9c3f7f[m
+Author: PaulKnees <jakewallace368@gmail.com>
+Date:   Sun Oct 16 11:46:20 2022 +0000
+
+    deleted index, hopefully it's fixed
+
+[33mcommit 1d2cfee50a92359e0a776480e283944e3fe277ef[m
+Author: PaulKnees <jakewallace368@gmail.com>
+Date:   Sun Oct 16 11:29:46 2022 +0000
+
+    Merge branch 'main' of github.com:Jake-W95/Prework-Study-Guide into feature/add-html
+
+[33mcommit 234c26cb8c69bea4e388a01b9182aa5aa723b1f6[m
+Merge: d49edb3 1183e98
+Author: PaulKnees <jakewallace368@gmail.com>
+Date:   Sun Oct 16 11:21:59 2022 +0000
+
+    unmerged files, apparently, I'm very confused
+
+[33mcommit 1183e98542fbaa177f02983336119483a23dfaba[m
+Merge: 3c8e146 5b93dbe
+Author: Jake-W95 <115796768+Jake-W95@users.noreply.github.com>
+Date:   Sun Oct 16 08:58:48 2022 +0000
+
+    Merge pull request #12 from Jake-W95/feature/add-html
+    
+    Changed list types
+
+[33mcommit 5b93dbedff9dab27b0ca30c222d22cb76cb18747[m
+Author: PaulKnees <jakewallace368@gmail.com>
+Date:   Sun Oct 16 09:59:21 2022 +0000
+
+    MORE list type changes
+
+[33mcommit c91ef9868ded0db07c2d57d39f54b4c641583e0f[m
+Author: PaulKnees <jakewallace368@gmail.com>
+Date:   Sun Oct 16 09:55:11 2022 +0000
+
+    Changed Bash-Commands list type
+
+[33mcommit d49edb3ddd83a20511e074690d10e5c40a535c1d[m
+Author: PaulKnees <jakewallace368@gmail.com>
+Date:   Sat Oct 15 17:00:38 2022 +0000
+
+    added mote HTML data to lists
+
+[33mcommit 3c8e14675b578951e5bb35f7f7548561cd69001b[m
+Merge: 2a0ee90 942bd5b
+Author: Jake-W95 <115796768+Jake-W95@users.noreply.github.com>
+Date:   Sat Oct 15 16:39:52 2022 +0000
+
+    Merge pull request #11 from Jake-W95/feature/add-html
+    
+    Added extra HTML Notes
+
+[33mcommit 942bd5bc8f86328807cd2f29acde5baef11caec7[m
+Author: PaulKnees <jakewallace368@gmail.com>
+Date:   Sat Oct 15 17:40:34 2022 +0000
+
+    added extra notes in HTML
+
+[33mcommit d65cb3084510195a6bb0b217b3369040ef868f7c[m
+Author: PaulKnees <jakewallace368@gmail.com>
+Date:   Sat Oct 15 17:13:15 2022 +0000
+
+    added notes and new Bash Command section
+
+[33mcommit 2a0ee90d76344ae86ad9288c16fd073ce8e6b49b[m
+Merge: 6fd9fbb 6b3833f
+Author: Jake-W95 <115796768+Jake-W95@users.noreply.github.com>
+Date:   Sat Oct 15 15:35:52 2022 +0000
+
+    Merge pull request #10 from Jake-W95/feature/add-css
+    
+    Added CSS
