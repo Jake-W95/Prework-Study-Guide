@@ -7,6 +7,7 @@ body {
     height: 100%;
     width: 100%;
     font-family: sans-serif;
+    background-color: rgb(59, 59, 59);
 }
 header {
     display: flex;
@@ -15,7 +16,8 @@ header {
     align-items: center;
     width: 95%;
     height: auto;
-    margin: auto;
+    margin: 30px auto 10px;
+    
     background-color: rgb(79, 79, 79);
     padding-top: 15px;
     border: 10px solid rgb(50, 50, 50);
@@ -70,9 +72,9 @@ main {
 main article {
     width: 100%;
     height: auto;
-    background-color: rgb(186, 199, 209);
+    background-color: rgb(111, 130, 142);
     padding: 10px;
-    border: 3px solid rgb(55, 55, 55);
+    border: 6px solid rgb(14, 14, 14);
     margin-bottom: 20px;
     
 }
@@ -83,8 +85,22 @@ main article h2 {
 }
 main article h3 {
     width:fit-content;
-    background-color: rgb(176, 176, 176);
+    background-color: rgb(116, 161, 206);
     padding: 3px;
     border: 3px solid black;
     margin: 6 auto;
+}
+#gen_note div{
+    display: flex;
+    justify-content: space-between;
+}
+#elements ul li, #atts ul li {
+    padding: 5px 2px;
+    border-bottom: 2px solid black;
+}
+article ul li b {
+    background-color: rgb(116, 185, 215);
+}
+article ul li i {
+    background-color: rgb(86, 130, 205);
 }
