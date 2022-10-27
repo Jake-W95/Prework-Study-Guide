@@ -5,6 +5,7 @@
 }
 body {
     height: 100%;
+    width: 100%;
     font-family: sans-serif;
     background-color: rgb(255, 181, 120);
     
@@ -58,4 +59,9 @@ main {
     margin: auto;
     margin-top: 20px;
     background-color: chocolate;
+}
+#gennote {
+    width: 50%;
+    background-color: rgb(202, 134, 81);
+    padding: 30px;
 }
