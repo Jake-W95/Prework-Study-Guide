@@ -6,31 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="assets/html-style.css">
 </head>
 
 <body>
-    <h1>
-        <a href="./index.html">HOME</a>
-    </h1>
+    <header>
+        <h1>
+            All About HTML
+        </h1>
+        <nav class="navigation">
+            <a href="./index.html" id="home">HOME</a>
+            <a href="csspage.html" id="css"> CSS</a>
+            <a href="javascriptpage.html" id="js">JavaScript</a>
+            <a href="githubpage.html" id="git">GitHub & GitLab</a>
+            <a href="bashpage.html" id="bash">Bash</a>
+        </nav>
+
+    </header>
 
 
 
-    <h1>HTML</h1>
-    <section>
-        <h2>General Notes</h2>
-        <ul>
-            <h3>HEAD</h3>
-            <li>The HEAD element contains information about the webpage</li>
-            <li>Information in the HEAD is not visible to the end user</li>
-            <li>Information within HEAD is for the web browser to read and display the webpage properly</li>
+    <main>
 
-            <h3>BODY</h3>
-            <li>The BODY element represents the visible content to the end user</li>
-            <li>HTML acts as the foundation of webpages</li>
-        </ul>
+        <article id="gen_note">
+            <h2>General Notes</h2>
+            <div>
+                <h3>HEAD</h3>
+                <ul>
+                    <li>The HEAD element contains information about the webpage</li>
+                    <li>Information in the HEAD is not visible to the end user</li>
+                    <li>Information within HEAD is for the web browser to read and display the webpage properly</li>
+                </ul>
 
-        <h2>ELEMENTS</h2>
+
+                <h3>BODY</h3>
+                <ul>
+                    <li>The BODY element represents the visible content to the end user</li>
+                    <li>HTML acts as the foundation of webpages</li>
+                </ul>
+            </div>
+        </article>
+
+        <article id="elements">
+            <h2>ELEMENTS</h2>
             <ul>
                 <li><b>!DOCTYPE</b> represents the document type, helping browsers correctly display the page</li>
                 <li><b>head</b> contains information for the browser, this information is not visible to the user.
@@ -46,10 +64,10 @@
                     Most browsers recognise headings and affect the text size accordingly</li>
                 <li><b>p</b> creates a new paragraph</li>
                 <li><b>a</b> creates a link. Links depend on having an <i>href</i> attribute inside of them with the
-                    link itsself, for example: <i>a href="url_destination"</i></li>
+                    link itself, for example: <i>a href="url_destination"</i></li>
                 <li><b>img</b> identifies an image, <b>img</b> elements must be paired with an <i>src</i> attribute, and
                     should also contain an <i>alt</i> attribute. For example:
-                    <i>img src="Location_of_Image" alt="Image_descreiptiom"</i>
+                    <i>img src="Location_of_Image" alt="Image_descriptio"</i>
                 </li>
                 <li><b>ul</b> creates an <b>unordered list</b></li>
                 <li><b>ol</b> creates an <b>ordered list</b></li>
@@ -65,15 +83,20 @@
                     stylesheets)</li>
                 <li><b>nav</b> defines a navigation bar</li>
                 <li><b>span</b> defines a section within a document</li>
-            </ul>   
+            </ul>
+        </article>
 
-    
-        <h2>ATTRIBUTES</h2>
- 
+        <article id="atts">
+            <h2>ATTRIBUTES</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima magnam quod itaque optio voluptatem
+                ducimus repellat doloremque ut sit! Esse impedit ad nihil vel cum tempora dicta exercitationem magnam!
+                Aliquid?</p>
+        </article>
 
 
-        
-    </section>
+
+
+    </main>
 
 </body>
 
