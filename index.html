@@ -12,20 +12,20 @@
 
   <body>
     <header id="top">
-      <h1>Prework Study Guide</h1>
+      <h1 class="headers">Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
-      <h2>✨ Open the Console to See What's Happening ✨</h2>
+      <h2 class="headers">✨ Open the Console to See What's Happening ✨</h2>
     </header>
 
     <main>
 
-
+<h2 class="headers">Useful Links</h2>
 <nav class="Page_links">     
-   <a href="htmlpage.html" > HTML</a>
-   <a href="csspage.html"> CSS</a>
-   <a href="javascriptpage.html">JavaScript</a>
-   <a href="githubpage.html">GitHub & GitLab</a>
-   <a href="bashpage.html">Bash</a>
+   <a href="htmlpage.html" id="html"> HTML</a>
+   <a href="csspage.html" id="css"> CSS</a>
+   <a href="javascriptpage.html" id="javaS">JavaScript</a>
+   <a href="githubpage.html" id="gits">GitHub & GitLab</a>
+   <a href="bashpage.html" id="bash">Bash</a>
 </nav>
   
     
@@ -46,7 +46,7 @@
 
 
     <section class="card" id="useful-acronyms-section">
-      <h2>Useful Acronyms</h2>
+      <h2 class="headers ">Useful Acronyms</h2>
       <ul>
         <li>API     - Application Programming Interface</li>
         <li>CI/CD   - Continuous Integration/Deployment</li>
@@ -66,9 +66,9 @@
 
 
     <section class="card" id="app-architecture-types">
-      <h2>Application Architecture Types</h2>
+      <h2 class="headers">Application Architecture Types</h2>
       <ul>
-        <li><h3>Frontend Only Application</h3> This can range from pure static 
+        <li><h3 class="header">Frontend Only Application</h3 class="header"> This can range from pure static 
           html/css/js or a more elaborate single page application built with React,
           Svelte, Vue, Angular, or with Native Web Components. These sites are usually 
           deployed using static servers which is essentially what services like Vercel 
@@ -77,7 +77,7 @@
           and friends, these services connect your deployment to your project's Github 
           then anytime you update GitHub it runs your project's build command and serves 
           the output statically.</li>
-        <li><h3>Full-Stack Applications</h3> These are applications where you create a 
+        <li><h3 class="header">Full-Stack Applications</h3 class="header"> These are applications where you create a 
           more complex server (not static) that does more advanced data manipulation 
           and then uses that data with a template engine (ejs, blade, erb, plush, pug) 
           to generate static HTML from the server which is then sent to the client. 
@@ -85,7 +85,7 @@
           to set up your own server using a VPS from Amazon, Microsoft, Google, Linode, 
           Digital Ocean, or other cloud services or using a service like Heroku which 
           simplifies many of the setup steps.</li>
-        <li><h3>Backend and Frontend Applications</h3> Nowadays applications are so 
+        <li><h3 class="header">Backend and Frontend Applications</h3 class="header"> Nowadays applications are so 
           complex they are really many applications or "Micro Services" handling 
           dedicated parts of the application. You may have one backend application 
           that only handles user authentication while other applications then handle 
@@ -96,7 +96,7 @@
           make requests to all the API's these microservices deliver. This makes the 
           architecture more modular and reusable for different client-side platforms 
           (desktop, mobile, devices).</li>  
-        <li><h3>Serverless</h3> This takes microservices to the next level where you 
+        <li><h3 class="header">Serverless</h3 class="header"> This takes microservices to the next level where you 
           just don't have backend applications at all. Instead, all your APIs are 
           built as several cloud functions that run on-demand which then have URLs 
           for your frontend to call them. Since you don't have to have a persistent 
