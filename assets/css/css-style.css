@@ -9,22 +9,48 @@
 body {
     width: 100%;
     height: 100%;
-    background-color: rgb(132, 173, 232);
+    background-color: rgb(80, 80, 80);
+    
     
     
 }
+header, footer {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+header h1 {
+ margin-bottom: 10px;
+}
+header nav a {
+    background-color: darkgray;
+    border: 1px solid black;
+    padding: 3px 4px;
+    margin: auto;
+   
+
+}
+
 #masterGrid {
+    width: 95%;
+    padding: 5px;
+    border: 4px solid rgb(39, 39, 39);
+    margin: 15px auto;
     display: grid;
-    grid-template-columns:50% 50%;
+    grid-template-columns:repeat(6, 1fr);
     grid-template-rows: repeat(7, auto);
+    gap: 10px;
     grid-template-areas:       
-     "header header"
-        "gennotes attribs"
-        "break break"
-        "boxnotes boxim"
-        "break2 break2"
-        "flexbox grids"
-        "footer footer";
+        "header header header header header header"
+        "gennotes gennotes attribs attribs attribs attribs"
+        "break break break break break break"
+        "boxnotes boxnotes boxnotes boxnotes boxim boxim"
+        "break2 break2 break2 break2 break2 break2"
+        "flexbox flexbox flexbox grids grids grids"
+        "footer footer footer footer footer footer";
     
 }
     
@@ -32,6 +58,7 @@ body {
 
 #header {
     grid-area: header;
+
 }
 #gennotes {
     grid-area: gennotes;
@@ -54,6 +81,10 @@ padding: 10px;
 }
 #boxim {
     grid-area: boxim;
+    background-image: url(../Box_Model.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #flexbox {
     grid-area: flexbox;
@@ -61,8 +92,16 @@ padding: 10px;
 #grids {
     grid-area: grids;
 }
-.gridcell {
-    border: 2px solid white;
+#footer {
+    grid-area: footer;
 }
+.gridcell {
+    padding: 10px;
+    background-color: rgb(132, 173, 232);
+}
+.gridcell h2 {
+    text-decoration: underline;
+}
+footer {text-decoration: none;}
 
 
