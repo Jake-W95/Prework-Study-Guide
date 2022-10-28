@@ -9,47 +9,60 @@
 body {
     width: 100%;
     height: 100%;
-    background-color: rgb(169, 99, 146);
-    display: flex;
-    flex-direction: column;
+    background-color: rgb(132, 173, 232);
+    
     
 }
-header {
-    width: 70%;
-    height: 102px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px;
-    margin: 10px auto; 
-    border: 6px solid rgb(169, 88, 146);
-    background-color: rgb(198, 116, 171);
-    /* text-align: center; */
+#masterGrid {
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:       
+     "header header"
+        "gennotes attribs"
+        "break break"
+        "boxnotes boxim"
+        "break2 break2"
+        "flexbox grids"
+        "footer footer";
+    
 }
-header h1 {
-    width: 50%;
-    padding: 6px;
-    border: 6px solid rgb(169, 88, 146);
-    background-color: rgb(221, 131, 191);
-    text-align: center;
-    /* margin: 10px auto; */
-}
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    width: fit-content;
-    /* padding: 3px; */
-    /* margin: auto; */
-   
+    
+  
 
+#header {
+    grid-area: header;
 }
-nav a {
-    /* font-family: sans-serifs; */
-    margin: 3px;
-    padding: 3px;
-    background-color: rgb(204, 103, 254);
-    font-weight: 600;
-    border: 4px solid black;
+#gennotes {
+    grid-area: gennotes;
 }
+#attribs {
+    grid-area: attribs;
+}
+#break {
+    grid-area: break;
+    background-color: black;
+    padding: 10px;
+}
+#break2{
+grid-area: break2;
+background-color: black;
+padding: 10px;
+}
+#boxnotes {
+    grid-area: boxnotes;
+}
+#boxim {
+    grid-area: boxim;
+}
+#flexbox {
+    grid-area: flexbox;
+}
+#grids {
+    grid-area: grids;
+}
+.gridcell {
+    border: 2px solid white;
+}
+
+
