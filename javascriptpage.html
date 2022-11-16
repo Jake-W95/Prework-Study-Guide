@@ -23,7 +23,7 @@
   </header>
 
   <main>
-    <article id="gennote">
+    <!-- <article id="gennote">
       <h1>General Notes</h1>
       <ul>
         <li>A Variable is a named container that allows us to store data in our code </li>
@@ -48,7 +48,7 @@
           </ol>
         </li>
       </ul>
-    </article>
+    </article> -->
 
     <article id="variables">
       <h1>Variables</h1>
@@ -117,7 +117,7 @@
       <h2>Loop Types</h2>
       <ul id="loop_list">
 
-
+        <!-- For Loop -->
         <li><b>For Loops:</b> for(expression 1; expression 2; expression 3) {
           code block to be executed}
           <ol>
@@ -125,11 +125,28 @@
             <li>defines the condition for executing the code block.</li>
             <li>is executed (every time) after the code block has been executed.</li>
           </ol>
-          <ul>
+        </li>
+        <!-- For Of loop -->
+        <li><b>For Of Loops:</b> for(<i>variable</i> of <i>array/object/string</i> { code block to be executed }</li>
+        <ul>
+          <li>iterates over selected variable <b>items</b> until reaching the end</li>
+        </ul>
+
+        <li><b>For In loop</b>
+          <ul id="objectForIn"> for<i>variable</i> in <i>objectName</i>
+            <ul>
+              <li>cycles through <i>properties</i> in an <b>object</b> </li>
+            </ul>
+          </ul>
+          <ul id="arrayForIn"> for<i>variable</i> in <i>arrayName</i>
+            <ul>
+              <li>cycles through <i>indices</i> on an <b>array</b> </li>
+            </ul>
           </ul>
 
         </li>
 
+        <!-- While Loop -->
         <li><b>While Loops:</b> while(condition) {
           code block to be executed }
           <ul>
@@ -137,12 +154,14 @@
             <li>more prone to create an <i>infinite loop</i>, crashing the browser tab </li>
           </ul>
         </li>
-
-        <li><b>Do While Loops</b> do {
-          code block to be executed }
+        <!-- Do While Loop  -->
+        <li><b>Do While Loops</b> <b>do</b> { code block to be executed }
           while (condition);</li>
-          <ul>executes the code block once <b>prior</b> to checking statement</ul>
-          <ul>then runs until condition is met</ul>
+        <ul>
+          <li>executes the code block once <b>prior</b> to checking statement</li>
+          <li>then runs until condition is met</li>
+        </ul>
+
 
 
 
@@ -150,6 +169,17 @@
 
 
       </ul>
+    </article>
+
+    <article class="methods">
+<h1>"Methods"</h1>
+<ul>
+  <li>".keys()"</li>
+  <li>.values()</li>
+  <li>.toString()</li>
+  <li>.join()</li>
+</ul>
+
     </article>
 
 
