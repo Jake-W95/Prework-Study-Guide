@@ -5,28 +5,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS</title>
+  <link rel="stylesheet" href="assets/css/main_stlye.css">
   <link rel="stylesheet" href="./assets/css/css-style.css">
+  <title>CSS</title>
+
+
+
+
 </head>
 
 <body>
   <main id="masterGrid">
-    <header id="header" class="gridcell">
-      <h1>
+    <header id="gridHeader" class="gridCell">
+      <h1 class="headers">
         All About CSS
       </h1>
-      <nav class="navigation">
-        <a href="./index.html" id="home">HOME</a>
-        <a href="./htmlpage.html" id="css"> HTML</a>
-        <a href="javascriptpage.html" id="js">JavaScript</a>
-        <a href="githubpage.html" id="git">GitHub & GitLab</a>
-        <a href="bashpage.html" id="bash">Bash</a>
-      </nav>
-
     </header>
+    <nav class="Page_links" id="gridLinks">
+      <a href="./index.html" id="home">HOME</a>
+      <a href="./htmlpage.html" id="css"> HTML</a>
+      <a href="javascriptpage.html" id="js">JavaScript</a>
+      <a href="githubpage.html" id="git">GitHub & GitLab</a>
+      <a href="bashpage.html" id="bash">Bash</a>
+      <a href="bootstrappage.html" id="bootStrap">Bootstrap CSS</a>
+    </nav>
 
-    <section id="gennotes" class="gridcell">
-      <h2>CSS</h2>
+    <section id="gridGenNotes" class="gridCell">
+      <h2 class="headers">CSS</h2>
       <ul>
         <li>A margin indicates how much space is around an elements perimeter</li>
         <li>A padding indicates how much space is around the content INSIDE of the element</li>
@@ -39,8 +44,8 @@
       </ul>
     </section>
 
-    <section id="attribs" class="gridcell">
-      <h2>Attributes</h2>
+    <section id="gridAttribs" class="gridCell">
+      <h2 class="headers">Attributes</h2>
       <ul>
         <li>
           <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias perferendis, atque esse rem eos quam,
@@ -64,10 +69,10 @@
       </ul>
     </section>
 
-    <div id="break"></div class="gridcell">
+    <div id="gridBreak"></div class="gridCell">
 
-    <Section id="boxnotes" class="gridcell">
-      <h2>The Box Model</h2>
+    <Section id="gridBoxNotes" class="gridCell">
+      <h2 class="headers">The Box Model</h2>
       <ul>
         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, sed. Voluptates dolorum, asperiores
           aspernatur laborum quaerat ea hic vero autem ullam voluptatum sint ratione dolorem deserunt, quas at ad odio.
@@ -86,16 +91,16 @@
       </ul>
     </Section>
 
-    <div id="boxim" class="gridcell">
-      
-      <img src="" alt="">
+    <div id="gridBoxim" class="gridCell">
+
+      <!-- <img src="" alt=""> -->
     </div>
 
-    <div id="break"></div>
-    <div id="break2"></div>
+    <div id="gridBreak"></div>
+    <div id="gridBreak2"></div>
 
-    <section id="flexbox" class="gridcell">
-      <h2>Flexbox</h2>
+    <section id="flexBox" class="gridCell">
+      <h2 class="headers">Flexbox</h2>
 
       <ul>
         <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod harum beatae aspernatur et, modi possimus
@@ -104,30 +109,16 @@
       </ul>
     </section>
 
-    <section id="grids" class="gridcell">
-      <h2>Grid</h2>
+    <section id="grids" class="card" class="gridCell">
+      <h2 class="headers">Grid</h2>
       <ul>
-        <li>
-          <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At sit omnis vitae animi, molestiae consequatur
-            perferendis aspernatur vero explicabo placeat minima necessitatibus possimus quibusdam maxime. Architecto
-            illum in repellat quibusdam!</div>
-          <div>Officiis eligendi, illo recusandae praesentium doloribus et repudiandae ipsam sapiente saepe, deserunt
-            ratione esse. Iste rem perspiciatis alias dolore nihil deserunt culpa consectetur repellendus possimus.
-            Laboriosam exercitationem magnam ipsum beatae!</div>
-          <div>Eius aspernatur culpa quod dolorem. Iusto error amet earum suscipit asperiores impedit quod adipisci,
-            repellendus cupiditate nesciunt eaque esse ipsam aliquid cumque aperiam doloribus excepturi. Provident
-            corrupti officia soluta eius.</div>
-          <div>Et recusandae dolorem qui voluptates distinctio ullam consequuntur excepturi odio enim. Expedita, a. Eum,
-            natus soluta! Doloribus expedita reprehenderit tenetur. Doloremque blanditiis cupiditate eius totam, alias
-            culpa officiis tempore voluptate!</div>
-          <div>Et, at! Dolores omnis dolor officiis? Ipsam repudiandae ipsum vel nulla neque ad alias et praesentium
-            quae molestiae enim, repellendus maxime similique eos illo veritatis labore. Labore est odit aut?</div>
-        </li>
+        <li>You <b>cannot</b> use the same item different locations on a grid, such as line breaks; instead you must
+          create a new element and use that with its own <i>grid-break</i> attribute</li>
       </ul>
     </section>
 
-    <footer id="footer" class="gridcell">
-      <h2>footer</h2>
+    <footer id="footer" class="gridCell">
+      <h2 class="headers">footer</h2>
     </footer>
   </main>
 

@@ -5,26 +5,35 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JavaScript</title>
+  <link rel="stylesheet" href="./assets/css/main_stlye.css">
   <link rel="stylesheet" href="./assets/css/js_style.css">
+  <title>JavaScript</title>
+
+
+
 </head>
 
 <body>
 
   <header>
-    <h1>All About JavaScript</h1>
-    <nav>
-      <a href="./index.html" id="home">HOME</a>
-      <a href="./htmlpage.html" id="html">HTML</a>
-      <a href="./csspage.html" id="css">CSS</a>
-      <a href="./githubpage.html" id="git">GitHub & GitLab</a>
-      <a href="./bashpage.html" id="bash">Bash</a>
-    </nav>
+    <h1 class="headers">All About JavaScript</h1>
+
   </header>
 
+
+
   <main>
-    <article id="gennote">
-      <h3>General Notes</h3>
+    <nav class="Page_links">
+      <a href="index.html" id="home">HOME</a>
+      <a href="htmlpage.html" id="html">HTML</a>
+      <a href="csspage.html" id="css">CSS</a>
+      <a href="githubpage.html" id="git">GitHub & GitLab</a>
+      <a href="bashpage.html" id="bash">Bash</a>
+      <a href="bootstrappage.html" id="bootStrap">Bootstrap CSS</a>
+    </nav>
+    <!-- <article class="card
+" id="gennote">
+      <h1 class="headers">General Notes</h1">
       <ul>
         <li>A Variable is a named container that allows us to store data in our code </li>
         <li>An Array is a single variable that is used to hold a group of data, typically this data is related in some
@@ -48,7 +57,167 @@
           </ol>
         </li>
       </ul>
-      </section> -->
+    class="card"> -->
+
+    <article class="card" id="variables">
+      <h1 class="headers">Variables</h1>
+      <b>Variables</b> store data <i>values</i>
+      <h2 class="headers"> Variable Types:</h2>
+      <ul>
+        <li><b>var</b> <i>varName</i> = <i>value</i>:
+          <p> Declares a variable</p>
+        </li>
+        <br>
+        <li><b>let</b> <i>varName</i> = <i>value</i>:
+          <p> Variables defined with let cannot be Redeclared.
+            Variables defined with let must be Declared before use.
+            Variables defined with let have Block Scope.</p>
+        </li>
+        <li><b>const</b> <i>varName</i> = <i>value</i>:
+          <p>
+            const variables cannot be changed
+            const variables must be assigned a value when they are declared
+          </p>
+        </li>
+        <br>
+        <h3 class="headers">Arrays</h3>
+        <li><b>var/let/const</b> <i>arrayName</i> = <i>[element1, element2, ... elementN]</i>:
+          <p> <b>Arrays</b> are variables that contain multiple <i>elements</i> <br>
+            <b>Arrays</b> can hold any type of <i>Primitive Value (string, number, variable,</i>
+          </p>
+          <ul>
+            <li>Arrays are index based, starting on <b>0</b> ; the first element = 0, the second = 1, the third</li>
+            <li>To specify an index number in an array syntax is: <i>arrayName</i>[indexNumber] </li>
+            <li>Arrays can contain arrays like any other element</li>
+            <li>To specify a <b>nested</b> array the syntax is: <i>arrayName</i>[1stIndex#][2ndIndex#]</li>
+          </ul>
+        </li>
+
+        <br>
+        <h3 class="headers">Objects</h3>
+        <li><b>var/let/const</b> <i>objectName</i> = { <br>
+          propertyNameString: "value", <br>
+          propertyNameNumber: 1234, <br>
+          propertyNameBoolean: True, <br>
+          propertyNameArray: [item1, item2, ... itemN] </i>
+          <p></p>
+          <ul>
+            <li><b>Objects</b> are variables that contain multiple values, written as <b>propertyName:value</b> </li>
+            <li><i>Properties</i> can store more than one value by using an <b>array</b></li>
+            <li>To specify a <i>property</i> one can use either:
+              <ol>
+                <li><b>Bracket notiation:</b> objectName[property]</li>
+                <p>OR </p>
+                <li><b>Dot notation:</b> objectName.property</li>
+                <h2 class="headers">Objects are <b>NOT</b> index based</h2>
+                <h3 class="headers">Only <i>property</i> names will work</h3>
+              </ol>
+            </li>
+          </ul>
+
+        </li>
+
+      </ul>
+    </article>
+
+
+    <article class="card" class="loops">
+      <h1 class="headers">Loops</h1 class="headers">
+      <p><b>Loops</b> run a code block repeatedly until a specific <i>condition</i> is met</p>
+      <h2>Loop Types</h2>
+      <ul id="loop_list">
+
+        <!-- For Loop -->
+        <li><b>For Loops:</b> for(expression 1; expression 2; expression 3) {
+          code block to be executed}
+          <ol>
+            <li>is executed (one time) before the execution of the code block.</li>
+            <li>defines the condition for executing the code block.</li>
+            <li>is executed (every time) after the code block has been executed.</li>
+          </ol>
+        </li>
+        <!-- For Of loop -->
+        <li><b>For Of Loops:</b> for(<i>variable</i> of <i>array/object/string</i> { code block to be executed }</li>
+        <ul>
+          <li>iterates over selected variable <b>items</b> until reaching the end</li>
+        </ul>
+
+        <li><b>For In loop</b>
+          <ul id="objectForIn"> for<i>variable</i> in <i>objectName</i>
+            <ul>
+              <li>cycles through <i>properties</i> in an <b>object</b> </li>
+            </ul>
+          </ul>
+          <ul id="arrayForIn"> for<i>variable</i> in <i>arrayName</i>
+            <ul>
+              <li>cycles through <i>indices</i> on an <b>array</b> </li>
+            </ul>
+          </ul>
+
+        </li>
+
+        <!-- While Loop -->
+        <li><b>While Loops:</b> while(condition) {
+          code block to be executed }
+          <ul>
+            <li>Simpler than <b>for</b> loops with only one condition</li>
+            <li>more prone to create an <i>infinite loop</i>, crashing the browser tab </li>
+          </ul>
+        </li>
+        <!-- Do While Loop  -->
+        <li><b>Do While Loops</b> <b>do</b> { code block to be executed }
+          while (condition);</li>
+        <ul>
+          <li>executes the code block once <b>prior</b> to checking statement</li>
+          <li>then runs until condition is met</li>
+        </ul>
+
+      </ul>
+    </article>
+
+    <article class="card" class="methods">
+      <h1 class="headers">Array <i>Methods</i> </h1 class="headers">
+
+      <p> <b>method</b> syntax: <i>arrayName.methodName()</i></p>
+
+      <ul>
+        <li><i>array</i>.toString(): Converts an <i>array</i> into a comma-seperated string of values:
+          <b>value1,value2,value3</b>;
+        </li>
+        <li><i>array</i>.join('___'): see <i>toString</i>, but with specified 'delimiter' in parentheses:
+          <b>value1___value2___value3</b>;
+        </li>
+        <li><i>concatArray</i> = array1.concat(array2, array3): concatenates specified <i>arrays</i> into one new
+          array;
+          <br>
+          <i>concatArray</i> = [array1A, array1B, array1C, array2A,array2B, array3A, array3B, etc.]
+        </li>
+        <li><i>array</i>.splice(index#, #toRemove, 'addItem1', 'addItem2'): removes a selected number fo items from an
+          <i>array</i> an (optional) adds new items in place;
+        </li>
+        <li><i>newArray</i> = <i>array</i>.slice(index#, #toRemove): cuts items from the specified <i>array</i> and
+          returns them to a <i>newArray</i></li>
+        <li><i>Array</i>.indexOf('item/value'): Finds the <b>first</b> index # of an array that contains specified
+          value
+        </li>
+        <li><i>Array</i>.lastIndexOf('item/value'): Finds the <b>last</b> index # of an array to contain specified
+          value
+        </li>
+        <li><i>Array</i>.forEach(): Loops through the given array, and calls the given call-back function for each of
+          the elements in the array.</li>
+        <li><i>Array</i>.map(): The map function takes in a call-back function as argument, and executes that function
+          on each element of the array it is working on. It maps each of the return values of the call-back into a new
+          array. It does not mutate the original array.</li>
+        <li><i>Array</i>.filter():The filter method is used to filter out array elements that fail a boolean test.
+          Only elements that pass the test are allowed through into the new return array.</li>
+
+
+
+        <li>".keys()"</li>
+        <li>.values()</li>
+      </ul>
+    </article>
+
 
 </body>
 
