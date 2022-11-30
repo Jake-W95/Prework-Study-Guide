@@ -1,0 +1,76 @@
+
+
+#masterGrid {
+
+    display: grid;
+    grid-template-columns:repeat(6, 1fr);
+    grid-template-rows: repeat(8, auto);
+    gap: 10px;
+    grid-template-areas:       
+        "header header header header header header"
+        "links links links links links links"
+        "gennotes gennotes attribs attribs attribs attribs"
+        "break break break break break break"
+        "boxnotes boxnotes boxnotes boxnotes boxim boxim"
+        "break2 break2 break2 break2 break2 break2"
+        "flexbox flexbox flexbox grids grids grids"
+        "footer footer footer footer footer footer";
+        
+    
+}
+    
+  
+
+#gridHeader {
+    grid-area: header;
+
+}
+#gridLinks {
+    grid-area: links;
+}
+#gridGenNotes {
+    grid-area: gennotes;
+}
+#gridAttribs {
+    grid-area: attribs;
+}
+#gridBreak {
+    grid-area: break;
+    background-color: black;
+    padding: 10px;
+}
+#gridBreak2{
+grid-area: break2;
+background-color: black;
+padding: 10px;
+}
+#gridBoxNotes {
+    grid-area: boxnotes;
+}
+#gridBoxIm {
+    grid-area: boxim;
+    background-image: url(../images/Box_Model.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#flexBox {
+    grid-area: flexbox;
+}
+#grids {
+    grid-area: grids;
+}
+#footer {
+    grid-area: footer;
+}
+.gridcell {
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+    /* background-color: rgb(132, 173, 232); */
+}
+.gridCell h2 {
+    text-decoration: underline;
+}
+/* footer {text-decoration: none;} */
+
+

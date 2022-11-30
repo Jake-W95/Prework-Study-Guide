@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main_stlye.css">
+    <title>JS Arrays</title>
+</head>
+
+<body>
+
+
+    <h1 class="headers">Array Methods</h1>
+    <nav class="Page_links">
+        <a href="./index.html">HOME</a>
+        <a href="./javascriptpage.html">BACK</a>
+    </nav>
+
+    <h2 class="headers"> <b>method</b> syntax: <i>arrayName.methodName()</i></h2>
+
+    <ul class="card">
+        <li><i>array</i>.toString(): Converts an <i>array</i> into a comma-seperated string of values:
+            <b>value1,value2,value3</b>;
+        </li>
+        <li><i>array</i>.join('___'): see <i>toString</i>, but with specified 'delimiter' in parentheses:
+            <b>value1___value2___value3</b>;
+        </li>
+        <li><i>concatArray</i> = array1.concat(array2, array3): concatenates specified <i>arrays</i> into one new
+            array;
+            <br>
+            <i>concatArray</i> = [array1A, array1B, array1C, array2A,array2B, array3A, array3B, etc.]
+        </li>
+        <li><i>array</i>.splice(index#, #toRemove, 'addItem1', 'addItem2'): removes a selected number fo items from an
+            <i>array</i> an (optional) adds new items in place;
+        </li>
+        <li><i>newArray</i> = <i>array</i>.slice(index#, #toRemove): cuts items from the specified <i>array</i> and
+            returns them to a <i>newArray</i></li>
+        <li><i>Array</i>.indexOf('item/value'): Finds the <b>first</b> index # of an array that contains specified
+            value
+        </li>
+        <li><i>Array</i>.lastIndexOf('item/value'): Finds the <b>last</b> index # of an array to contain specified
+            value
+        </li>
+        <li><i>Array</i>.forEach(): Loops through the given array, and calls the given call-back function for each of
+            the elements in the array.</li>
+        <li><i>Array</i>.map(): The map function takes in a call-back function as argument, and executes that function
+            on each element of the array it is working on. It maps each of the return values of the call-back into a new
+            array. It does not mutate the original array.</li>
+        <li><i>Array</i>.filter():The filter method is used to filter out array elements that fail a boolean test.
+            Only elements that pass the test are allowed through into the new return array.</li>
+
+
+
+        <li>".keys()"</li>
+        <li>.values()</li>
+    </ul>
+</body>
+
+</html>
