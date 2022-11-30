@@ -1,6 +1,6 @@
 # <Prework Study Guide Webpage>
 
-## A simple webpage containing information regarding different coding languages and webpage creation methodologies. 
+## A simple site consisting of numerous pages containing information regarding different coding languages and webpage creation methodologies. 
 
 
 - The motivation behind this project was a need to have quick access to clearly presented information regarding coding languages and methodologies.
