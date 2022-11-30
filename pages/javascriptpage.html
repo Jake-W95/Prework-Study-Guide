@@ -53,25 +53,61 @@
           </p>
         </li>
       </ul>
-
-      <ul class="types card">
+      <section class="types card" id='arraySection'>
         <h3 class="headers">Arrays</h3>
-        <form class="headers" action="javascript_arrMeths.html" >
-      <button type="submit" class="button" class id="arrMeths">Array Methods</button>
-        </form>
-        
-        <li><b>var/let/const</b> <i>arrayName</i> = <i>[element1, element2, ... elementN]</i>:
-          <p> <b>Arrays</b> are variables that contain multiple <i>elements</i> <br>
-            <b>Arrays</b> can hold any type of <i>Primitive Value (string, number, variable,</i>
-          </p>
-          <ul>
-            <li>Arrays are index based, starting on <b>0</b> ; the first element = 0, the second = 1, the third</li>
-            <li>To specify an index number in an array syntax is: <i>arrayName</i>[indexNumber] </li>
-            <li>Arrays can contain arrays like any other element</li>
-            <li>To specify a <b>nested</b> array the syntax is: <i>arrayName</i>[1stIndex#][2ndIndex#]</li>
-          </ul>
-        </li>
-      </ul>
+        <button type="button" class="button" class id="arrayMethodButton" style="display:block;">Press for Array
+          Methods</button>
+        <button type="button" class="button" class id="arrayInfoButton" style="display:none;">Press for Array
+          Information</button>
+
+        <ul id="arrayInfo" style="display:block;">
+          <li><b>var/let/const</b> <i>arrayName</i> = <i>[element1, element2, ... elementN]</i>:
+            <p> <b>Arrays</b> are variables that contain multiple <i>elements</i> <br>
+              <b>Arrays</b> can hold any type of <i>Primitive Value (string, number, variable,</i>
+            </p>
+            <ul>
+              <li>Arrays are index based, starting on <b>0</b> ; the first element = 0, the second = 1, the third</li>
+              <li>To specify an index number in an array syntax is: <i>arrayName</i>[indexNumber] </li>
+              <li>Arrays can contain arrays like any other element</li>
+              <li>To specify a <b>nested</b> array the syntax is: <i>arrayName</i>[1stIndex#][2ndIndex#]</li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul id='arrayMethodInfo' style="display:none;">
+          <li><i>array</i>.toString(): Converts an <i>array</i> into a comma-seperated string of values:
+            <b>value1,value2,value3</b>;
+          </li>
+          <li><i>array</i>.join('___'): see <i>toString</i>, but with specified 'delimiter' in parentheses:
+            <b>value1___value2___value3</b>;
+          </li>
+          <li><i>concatArray</i> = array1.concat(array2, array3): concatenates specified <i>arrays</i> into one new
+            array;
+            <br>
+            <i>concatArray</i> = [array1A, array1B, array1C, array2A,array2B, array3A, array3B, etc.]
+          </li>
+          <li><i>array</i>.splice(index#, #toRemove, 'addItem1', 'addItem2'): removes a selected number fo items from an
+            <i>array</i> an (optional) adds new items in place;
+          </li>
+          <li><i>newArray</i> = <i>array</i>.slice(index#, #toRemove): cuts items from the specified <i>array</i> and
+            returns them to a <i>newArray</i></li>
+          <li><i>Array</i>.indexOf('item/value'): Finds the <b>first</b> index # of an array that contains specified
+            value
+          </li>
+          <li><i>Array</i>.lastIndexOf('item/value'): Finds the <b>last</b> index # of an array to contain specified
+            value
+          </li>
+          <li><i>Array</i>.forEach(): Loops through the given array, and calls the given call-back function for each of
+            the elements in the array.</li>
+          <li><i>Array</i>.map(): The map function takes in a call-back function as argument, and executes that function
+            on each element of the array it is working on. It maps each of the return values of the call-back into a new
+            array. It does not mutate the original array.</li>
+          <li><i>Array</i>.filter():The filter method is used to filter out array elements that fail a boolean test.
+            Only elements that pass the test are allowed through into the new return array.</li>
+        </ul>
+
+      </section>
+
 
       <ul class="types card">
         <h3 class="headers">Objects</h3>
@@ -160,7 +196,7 @@
       </ul>
     </article>
 
-<script src="assets/JScripts/JavaScript_script.js"></script>
+    <script src="../assets/JScripts/JavaScript_script.js"></script>
 </body>
 
 </html>
