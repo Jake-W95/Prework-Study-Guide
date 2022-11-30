@@ -53,7 +53,7 @@
           </p>
         </li>
       </ul>
-      <section class="types card" id='arraySection'>
+      <section class="card" id='arraySection'>
         <h3 class="headers">Arrays</h3>
 
         <section id="arrayInfoSect">
@@ -121,19 +121,22 @@
 
       </section>
 
-
-      <ul class="types card" id="objectSection">
+      <section class="card" id="objectSection">
         <h3 class="headers">Objects</h3>
-        <button type="submit" class="button">
-          Object Methods
-        </button>
-        <li><b>var/let/const</b> <i>objectName</i> = { <br>
-          propertyNameString: "value", <br>
-          propertyNameNumber: 1234, <br>
-          propertyNameBoolean: True, <br>
-          propertyNameArray: [item1, item2, ... itemN] </i>
-          <p></p>
+
+        <button type="button" class="button" id="objMethodButton" style="display:block; margin:auto;">Press for Object Methods </button>
+
+        <section id="objInfo">
+          <p>
+            <b>var/let/const</b> <i>objectName</i> = { <br>
+            propertyNameString: "value", <br>
+            propertyNameNumber: 1234, <br>
+            propertyNameBoolean: True, <br>
+            propertyNameArray: [item1, item2, ... itemN]
+          </p>
+
           <ul>
+            <br>
             <li><b>Objects</b> are variables that contain multiple values, written as <b>propertyName:value</b> </li>
             <li><i>Properties</i> can store more than one value by using an <b>array</b></li>
             <li>To specify a <i>property</i> one can use either:
@@ -146,68 +149,79 @@
               </ol>
             </li>
           </ul>
-        </li>
-    </article>
+          </li>
+        </section>
 
+        <section id="objMethod" style="display:none;">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sed quae eveniet quos optio voluptas cum voluptatum sequi tempore! Fugiat accusamus aliquam eius porro repellat assumenda ullam omnis debitis necessitatibus!</p>
 
-    <article class="card" class="loops">
-      <h1 class="headers">Loops</h1 class="headers">
-      <h3 class="headers">
-        <b>Loops</b> run a code block repeatedly until a specific <i>condition</i> is met</p>
-      </h3>
-      <h2 class="headers">Loop Types</h2>
-      <ul id="loop_list">
-
-        <!-- For Loop -->
-        <div class="types, card">
-          <b>For Loops:</b> for(expression 1; expression 2; expression 3) {
-          code block to be executed}
-          <ol>
-            <li>is executed (one time) before the execution of the code block.</li>
-            <li>defines the condition for executing the code block.</li>
-            <li>is executed (every time) after the code block has been executed.</li>
-          </ol>
-        </div>
-
-
-        <div class="types, card">
-          <b>For Of Loops:</b> for(<i>variable</i> of <i>array/object/string</i> { code block to be executed }
-
-          iterates over selected variable <b>items</b> until reaching the end
-        </div>
-
-        <div class="types, card">
-          <b>For In loop:</b>
-          for(<i>variable</i> in <i>objectName</i>)
-          cycles through <i>properties</i> in an <b>object</b>
-        </div>
-
-        <!-- While Loop -->
-        <div class="types, card">
-          <b>While Loops:</b> while(condition) {
-          code block to be executed }
-
-          Simpler than <b>for</b> loops with only one condition
-          more prone to create an <i>infinite loop</i>, crashing the browser tab
-        </div>
+        </section>
 
 
 
-        <!-- Do While Loop  -->
-        <div class="types, card">
-          <b>Do While Loops</b> <b>do</b> { code block to be executed }
-          while (condition);
-
-          executes the code block once <b>prior</b> to checking statement
-          then runs until condition is met
-        </div>
+      </section>
 
 
 
-      </ul>
-    </article>
 
-    <script src="../assets/JScripts/JavaScript_script.js"></script>
+      <article class="card" class="loops">
+        <h1 class="headers">Loops</h1 class="headers">
+        <h3 class="headers">
+          <b>Loops</b> run a code block repeatedly until a specific <i>condition</i> is met</p>
+        </h3>
+        <h2 class="headers">Loop Types</h2>
+        <ul id="loop_list">
+
+          <!-- For Loop -->
+          <div class="types, card">
+            <b>For Loops:</b> for(expression 1; expression 2; expression 3) {
+            code block to be executed}
+            <ol>
+              <li>is executed (one time) before the execution of the code block.</li>
+              <li>defines the condition for executing the code block.</li>
+              <li>is executed (every time) after the code block has been executed.</li>
+            </ol>
+          </div>
+
+
+          <div class="types, card">
+            <b>For Of Loops:</b> for(<i>variable</i> of <i>array/object/string</i> { code block to be executed }
+
+            iterates over selected variable <b>items</b> until reaching the end
+          </div>
+
+          <div class="types, card">
+            <b>For In loop:</b>
+            for(<i>variable</i> in <i>objectName</i>)
+            cycles through <i>properties</i> in an <b>object</b>
+          </div>
+
+          <!-- While Loop -->
+          <div class="types, card">
+            <b>While Loops:</b> while(condition) {
+            code block to be executed }
+
+            Simpler than <b>for</b> loops with only one condition
+            more prone to create an <i>infinite loop</i>, crashing the browser tab
+          </div>
+
+
+
+          <!-- Do While Loop  -->
+          <div class="types, card">
+            <b>Do While Loops</b> <b>do</b> { code block to be executed }
+            while (condition);
+
+            executes the code block once <b>prior</b> to checking statement
+            then runs until condition is met
+          </div>
+
+
+
+        </ul>
+      </article>
+
+      <script src="../assets/JScripts/JavaScript_script.js"></script>
 </body>
 
 </html>

@@ -1,27 +1,30 @@
 // var arraySection = document.getElementById('arraySection')
 var arrayMethodButton = document.getElementById('arrayMethodButton')
 var arrayInfoButton = document.getElementById('arrayInfoButton')
-var arrayInfo = document.getElementById('arrayInfo')
+
 var arrayMethod = document.getElementById('arrayMethod')
+var arrayInfo = document.getElementById('arrayInfo')
 
+var objectMethodButton = document.getElementById('objectMethodButton')
+var objectInfoButton = document.getElementById('objectInfoButton')
+var objectInfo = document.getElementById('objectInfo')
 
-var arrayMethod = document.getElementById('arrayInfo')
-var arrayInfo = document.getElementById('arrayMethod')
+arrayMethodButton.addEventListener('click', toArrayMethod);
+arrayInfoButton.addEventListener('click', toArrayInfo)
 
-arrayMethodButton.addEventListener('click', toMethod);
-arrayInfoButton.addEventListener('click', toInfo)
-
-function toMethod(){
+function toArrayMethod(){
 arrayInfoButton.style.display = 'block';
-arrayInfo.style.display = 'block';
+arrayMethod.style.display = 'block';
 arrayMethodButton.style.display = 'none';
-arrayMethod.style.display = 'none';
+arrayInfo.style.display = 'none';
 }
-function toInfo() {
+function toArrayInfo() {
     arrayInfoButton.style.display = 'none';
-    arrayInfo.style.display = 'none';
+    arrayMethod.style.display = 'none';
     arrayMethodButton.style.display = 'block';
-    arrayMethod.style.display = 'block';   
+    arrayInfo.style.display = 'block';   
+
+
 }
 
 
