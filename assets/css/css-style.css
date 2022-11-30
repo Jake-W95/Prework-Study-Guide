@@ -1,22 +1,21 @@
 
 
 #masterGrid {
-
+padding-top: 20px;
     display: grid;
     grid-template-columns:repeat(6, 1fr);
-    grid-template-rows: repeat(8, auto);
-    gap: 10px;
+    grid-template-rows: repeat(6, auto);
+    gap: 10px 100px;
+
     grid-template-areas:       
-        "header header header header header header"
-        "links links links links links links"
+        /* "header header header header header header" */
+        /* "links links links links links links" */
         "gennotes gennotes attribs attribs attribs attribs"
         "break break break break break break"
-        "boxnotes boxnotes boxnotes boxnotes boxim boxim"
+        "boxnotes boxnotes boxnotes boxim boxim boxim"
         "break2 break2 break2 break2 break2 break2"
         "flexbox flexbox flexbox grids grids grids"
         "footer footer footer footer footer footer";
-        
-    
 }
     
   
@@ -47,12 +46,13 @@ padding: 10px;
 #gridBoxNotes {
     grid-area: boxnotes;
 }
-#gridBoxIm {
+#gridBoxim {
     grid-area: boxim;
     background-image: url(../images/Box_Model.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:contain;
+    margin-left: 50px;
 }
 #flexBox {
     grid-area: flexbox;
