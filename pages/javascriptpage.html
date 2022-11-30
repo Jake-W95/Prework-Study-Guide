@@ -56,9 +56,9 @@
       <section class="types card" id='arraySection'>
         <h3 class="headers">Arrays</h3>
 
-        <section >
-          <button type="submit" class="headers button" id="arrayMethodButton" style="display:block;">Press for Array
-            Methods</button>
+        <section id="arrayInfoSect">
+          <button type="button" class="button" id="arrayMethodButton" style="display:block; margin:auto;">Press for
+            Array Methods</button>
 
           <ul id="arrayInfo">
             <li><b>var/let/const</b> <i>arrayName</i> = <i>[element1, element2, ... elementN]</i>:
@@ -75,8 +75,10 @@
           </ul>
         </section>
 
-        <section>
-          <button type="submit" class="headers button" id="arrayInfoButton" style="display:none;">Press forArray Information</button>
+        <section id="arrayMethodSect">
+          <button type="button" class="button" id="arrayInfoButton" style="display:none; margin:auto;">Press forArray
+            Information</button>
+
           <ul id="arrayMethod" style="display: none;">
             <li><i>array</i>.toString(): Converts an <i>array</i> into a comma-seperated string of values:
               <b>value1,value2,value3</b>;
@@ -120,13 +122,11 @@
       </section>
 
 
-      <ul class="types card">
+      <ul class="types card" id="objectSection">
         <h3 class="headers">Objects</h3>
-        <form class="headers" action="javascript_objMeths.html">
-          <button type="submit" class="button">
-            Object Methods
-          </button>
-        </form>
+        <button type="submit" class="button">
+          Object Methods
+        </button>
         <li><b>var/let/const</b> <i>objectName</i> = { <br>
           propertyNameString: "value", <br>
           propertyNameNumber: 1234, <br>
