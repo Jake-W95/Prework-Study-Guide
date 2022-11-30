@@ -1,1 +1,17 @@
-/* None Yet */
+.types {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card {
+    padding: 20px;
+    margin-left: auto;
+}
+
+.button{
+    /* width: 25%; */
+    background-color: seagreen;
+    color: white;
+    border:4px solid darkgreen;
+}
