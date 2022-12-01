@@ -1,19 +1,4 @@
-.contents {
-    width: 40%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    
-}
-.contents a {
-    width: 30%;
-    padding: 7px;
-    border: 2px solid #565656;
-    background-color: antiquewhite;
-    text-align: center;
-}
+
 
 
 .types {
@@ -22,16 +7,12 @@
     justify-content: space-evenly;
 }
 
+/* Nested cards, needs less padding */
 .card {
     padding: 20px;
     margin-left: auto;
 }
-
-.button{
-    width: 30%;
-    margin: auto;
-    font-weight: bold   ;
-    background-color: seagreen;
-    color: white;
-    border:4px solid darkgreen;
+#DomGenInfo{
+    display: flex;
 }
+

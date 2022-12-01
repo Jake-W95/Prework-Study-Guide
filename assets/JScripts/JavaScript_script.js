@@ -13,12 +13,22 @@ var objectInfoButton = document.getElementById('objectInfoButton')
 var objectInfo = document.getElementById('objectInfo')
 var objectMethod = document.getElementById('objectMethod')
 
+// Events
+var showEventsButton = document.getElementById('showEventsButton')
+var hideEventsButton = document.getElementById('hideEventsButton')
+var events = document.getElementById('events')
 
+// Array Buttons
 arrayMethodButton.addEventListener('click', toArrayMethod);
 arrayInfoButton.addEventListener('click', toArrayInfo);
 
+// Object Buttons
 objectMethodButton.addEventListener('click', toObjectMethod);
 objectInfoButton.addEventListener('click', toObjectInfo);
+
+// Events Buttons
+showEventsButton.addEventListener('click', showEvents)
+hideEventsButton.addEventListener('click', hideEvents)
 
 function toArrayMethod() {
     arrayInfoButton.style.display = 'block';
@@ -32,7 +42,6 @@ function toArrayInfo() {
     arrayMethodButton.style.display = 'block';
     arrayInfo.style.display = 'block';
 }
-
 
 
 function toObjectMethod() {
@@ -49,3 +58,13 @@ objectInfo.style.display = 'block';
 objectMethod.style.display = 'none';
 }
 
+function showEvents(){
+    events.style.display = 'block';
+    showEventsButton.style.display = 'none';
+    hideEventsButton.style.display = 'block';
+}
+function hideEvents(){
+    events.style.display = 'none';
+    showEventsButton.style.display = 'block';
+    hideEventsButton.style.display = 'none';
+}
