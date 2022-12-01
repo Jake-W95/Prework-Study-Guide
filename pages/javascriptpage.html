@@ -8,34 +8,42 @@
   <link rel="stylesheet" href="../assets/css/main_stlye.css">
   <link rel="stylesheet" href="../assets/css/js_style.css">
   <title>JavaScript</title>
-
 </head>
 
 <body>
-
   <header>
     <h1 class="headers">All About JavaScript</h1>
-
   </header>
+<div class="PLBox">
+  <nav class="Page_links">
+    <a href="../index.html" id="home">HOME</a>
+    <a href="../pages/htmlpage.html" id="html">HTML</a>
+    <a href="../pages/csspage.html" id="css">CSS</a>
+    <a href="../pages/githubpage.html" id="git">GitHub & GitLab</a>
+    <a href="../pages/bashpage.html" id="bash">Bash</a>
+    <a href="../pages/bootstrappage.html" id="bootStrap">Bootstrap CSS</a>
+  </nav>
+</div>
 
-
+  <nav class="contents">
+    <h2 class="headers">Page Menu</h2>
+    <a href="#variables">Variables</a>
+    <a href="#arrays">Arrays</a>
+    <a href="#objects">Objects</a>
+    <a href="">Conditional Statements</a>
+    <a href="#loops">Loops</a>
+    <a href="">Functions</a>
+    <a href="">sefjh</a>
+    <a href="">sefjh</a>
+  </nav>
 
   <main>
-    <nav class="Page_links">
-      <a href="../index.html" id="home">HOME</a>
-      <a href="../pages/htmlpage.html" id="html">HTML</a>
-      <a href="../pages/csspage.html" id="css">CSS</a>
-      <a href="../pages/githubpage.html" id="git">GitHub & GitLab</a>
-      <a href="../pages/bashpage.html" id="bash">Bash</a>
-      <a href="../pages/bootstrappage.html" id="bootStrap">Bootstrap CSS</a>
-    </nav>
-
-
-    <article class="card" id="variables">
+    <section class="card" id="variables">
       <h1 class="headers">Variables</h1>
       <h3 class="headers"><b>Variables</b> store data <i>values</i></h3>
-      <h2 class="headers"> Variable Types:</h2>
+
       <ul class="types, card">
+        <h2 class="headers"> Basic Variable Types:</h2>
         <li><b>var</b> <i>varName</i> = <i>value</i>:
           <p> Declares a variable</p>
         </li>
@@ -53,76 +61,92 @@
           </p>
         </li>
       </ul>
-      <section class="types card" id='arraySection'>
-        <h3 class="headers">Arrays</h3>
-        <button type="button" class="button" class id="arrayMethodButton" style="display:block;">Press for Array
-          Methods</button>
-        <button type="button" class="button" class id="arrayInfoButton" style="display:none;">Press for Array
-          Information</button>
+    </section>
+      <section class="card" id='arrays'>
+        <h2 class="headers">Arrays</h2>
 
-        <ul id="arrayInfo" style="display:block;">
-          <li><b>var/let/const</b> <i>arrayName</i> = <i>[element1, element2, ... elementN]</i>:
-            <p> <b>Arrays</b> are variables that contain multiple <i>elements</i> <br>
-              <b>Arrays</b> can hold any type of <i>Primitive Value (string, number, variable,</i>
-            </p>
-            <ul>
-              <li>Arrays are index based, starting on <b>0</b> ; the first element = 0, the second = 1, the third</li>
-              <li>To specify an index number in an array syntax is: <i>arrayName</i>[indexNumber] </li>
-              <li>Arrays can contain arrays like any other element</li>
-              <li>To specify a <b>nested</b> array the syntax is: <i>arrayName</i>[1stIndex#][2ndIndex#]</li>
-            </ul>
-          </li>
-        </ul>
+        <section id="arrayInfoSect">
+          <button type="button" class="button" id="arrayMethodButton" style="display:block;">Press for
+            Array Methods</button>
 
-        <ul id='arrayMethodInfo' style="display:none;">
-          <li><i>array</i>.toString(): Converts an <i>array</i> into a comma-seperated string of values:
-            <b>value1,value2,value3</b>;
-          </li>
-          <li><i>array</i>.join('___'): see <i>toString</i>, but with specified 'delimiter' in parentheses:
-            <b>value1___value2___value3</b>;
-          </li>
-          <li><i>concatArray</i> = array1.concat(array2, array3): concatenates specified <i>arrays</i> into one new
-            array;
-            <br>
-            <i>concatArray</i> = [array1A, array1B, array1C, array2A,array2B, array3A, array3B, etc.]
-          </li>
-          <li><i>array</i>.splice(index#, #toRemove, 'addItem1', 'addItem2'): removes a selected number fo items from an
-            <i>array</i> an (optional) adds new items in place;
-          </li>
-          <li><i>newArray</i> = <i>array</i>.slice(index#, #toRemove): cuts items from the specified <i>array</i> and
-            returns them to a <i>newArray</i></li>
-          <li><i>Array</i>.indexOf('item/value'): Finds the <b>first</b> index # of an array that contains specified
-            value
-          </li>
-          <li><i>Array</i>.lastIndexOf('item/value'): Finds the <b>last</b> index # of an array to contain specified
-            value
-          </li>
-          <li><i>Array</i>.forEach(): Loops through the given array, and calls the given call-back function for each of
-            the elements in the array.</li>
-          <li><i>Array</i>.map(): The map function takes in a call-back function as argument, and executes that function
-            on each element of the array it is working on. It maps each of the return values of the call-back into a new
-            array. It does not mutate the original array.</li>
-          <li><i>Array</i>.filter():The filter method is used to filter out array elements that fail a boolean test.
-            Only elements that pass the test are allowed through into the new return array.</li>
-        </ul>
+          <ul id="arrayInfo">
+            <li><b>var/let/const</b> <i>arrayName</i> = <i>[element1, element2, ... elementN]</i>:
+              <p> <b>Arrays</b> are variables that contain multiple <i>elements</i> <br>
+                <b>Arrays</b> can hold any type of <i>Primitive Value (string, number, variable,</i>
+              </p>
+              <ul>
+                <li>Arrays are index based, starting on <b>0</b> ; the first element = 0, the second = 1, the third</li>
+                <li>To specify an index number in an array syntax is: <i>arrayName</i>[indexNumber] </li>
+                <li>Arrays can contain arrays like any other element</li>
+                <li>To specify a <b>nested</b> array the syntax is: <i>arrayName</i>[1stIndex#][2ndIndex#]</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section id="arrayMethodSect">
+          <button type="button" class="button" id="arrayInfoButton" style="display:none;">Press forArray
+            Information</button>
+
+          <ul id="arrayMethod" style="display: none;">
+            <li><i>array</i>.toString(): Converts an <i>array</i> into a comma-seperated string of values:
+              <b>value1,value2,value3</b>;
+            </li>
+            <li><i>array</i>.join('___'): see <i>toString</i>, but with specified 'delimiter' in parentheses:
+              <b>value1___value2___value3</b>;
+            </li>
+            <li><i>concatArray</i> = array1.concat(array2, array3): concatenates specified <i>arrays</i> into one new
+              array;
+              <br>
+              <i>concatArray</i> = [array1A, array1B, array1C, array2A,array2B, array3A, array3B, etc.]
+            </li>
+            <li><i>array</i>.splice(index#, #toRemove, 'addItem1', 'addItem2'): removes a selected number fo items from
+              an
+              <i>array</i> an (optional) adds new items in place;
+            </li>
+            <li><i>newArray</i> = <i>array</i>.slice(index#, #toRemove): cuts items from the specified <i>array</i> and
+              returns them to a <i>newArray</i></li>
+            <li><i>Array</i>.indexOf('item/value'): Finds the <b>first</b> index # of an array that contains specified
+              value
+            </li>
+            <li><i>Array</i>.lastIndexOf('item/value'): Finds the <b>last</b> index # of an array to contain specified
+              value
+            </li>
+            <li><i>Array</i>.forEach(): Loops through the given array, and calls the given call-back function for each
+              of
+              the elements in the array.</li>
+            <li><i>Array</i>.map(): The map function takes in a call-back function as argument, and executes that
+              function
+              on each element of the array it is working on. It maps each of the return values of the call-back into a
+              new
+              array. It does not mutate the original array.</li>
+            <li><i>Array</i>.filter():The filter method is used to filter out array elements that fail a boolean test.
+              Only elements that pass the test are allowed through into the new return array.</li>
+          </ul>
+
+
+        </section>
+
 
       </section>
 
+      <section class="card" id="objects">
+        <h2 class="headers">Objects</h2>
 
-      <ul class="types card">
-        <h3 class="headers">Objects</h3>
-        <form class="headers" action="javascript_objMeths.html">
-          <button type="submit" class="button">
-            Object Methods
-          </button>
-        </form>
-        <li><b>var/let/const</b> <i>objectName</i> = { <br>
-          propertyNameString: "value", <br>
-          propertyNameNumber: 1234, <br>
-          propertyNameBoolean: True, <br>
-          propertyNameArray: [item1, item2, ... itemN] </i>
-          <p></p>
+        <button type="button" class="button" id="objectMethodButton" style="display:block;">Press for Object
+          Methods </button>
+
+        <section id="objectInfo">
+          <p>
+            <b>var/let/const</b> <i>objectName</i> = { <br>
+            propertyNameString: "value", <br>
+            propertyNameNumber: 1234, <br>
+            propertyNameBoolean: True, <br>
+            propertyNameArray: [item1, item2, ... itemN]
+          </p>
+
           <ul>
+            <br>
             <li><b>Objects</b> are variables that contain multiple values, written as <b>propertyName:value</b> </li>
             <li><i>Properties</i> can store more than one value by using an <b>array</b></li>
             <li>To specify a <i>property</i> one can use either:
@@ -135,68 +159,84 @@
               </ol>
             </li>
           </ul>
-        </li>
-    </article>
+          </li>
+        </section>
 
+        <button type="button" class="button" id="objectInfoButton" style="display:none;">Press for Object
+          Information</button>
+        <section id='objectMethod' style='display:none'>
 
-    <article class="card" class="loops">
-      <h1 class="headers">Loops</h1 class="headers">
-      <h3 class="headers">
-        <b>Loops</b> run a code block repeatedly until a specific <i>condition</i> is met</p>
-      </h3>
-      <h2 class="headers">Loop Types</h2>
-      <ul id="loop_list">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sed quae eveniet quos optio voluptas cum
+            voluptatum sequi tempore! Fugiat accusamus aliquam eius porro repellat assumenda ullam omnis debitis
+            necessitatibus!</p>
 
-        <!-- For Loop -->
-        <div class="types, card">
-          <b>For Loops:</b> for(expression 1; expression 2; expression 3) {
-          code block to be executed}
-          <ol>
-            <li>is executed (one time) before the execution of the code block.</li>
-            <li>defines the condition for executing the code block.</li>
-            <li>is executed (every time) after the code block has been executed.</li>
-          </ol>
-        </div>
-
-
-        <div class="types, card">
-          <b>For Of Loops:</b> for(<i>variable</i> of <i>array/object/string</i> { code block to be executed }
-
-          iterates over selected variable <b>items</b> until reaching the end
-        </div>
-
-        <div class="types, card">
-          <b>For In loop:</b>
-          for(<i>variable</i> in <i>objectName</i>)
-          cycles through <i>properties</i> in an <b>object</b>
-        </div>
-
-        <!-- While Loop -->
-        <div class="types, card">
-          <b>While Loops:</b> while(condition) {
-          code block to be executed }
-
-          Simpler than <b>for</b> loops with only one condition
-          more prone to create an <i>infinite loop</i>, crashing the browser tab
-        </div>
+        </section>
 
 
 
-        <!-- Do While Loop  -->
-        <div class="types, card">
-          <b>Do While Loops</b> <b>do</b> { code block to be executed }
-          while (condition);
-
-          executes the code block once <b>prior</b> to checking statement
-          then runs until condition is met
-        </div>
+      </section>
 
 
 
-      </ul>
-    </article>
 
-    <script src="../assets/JScripts/JavaScript_script.js"></script>
+      <article class="card" class="loops">
+        <h1 class="headers">Loops</h1 class="headers">
+        <h3 class="headers">
+          <b>Loops</b> run a code block repeatedly until a specific <i>condition</i> is met</p>
+        </h3>
+        <h2 class="headers">Loop Types</h2>
+        <ul id="loop_list">
+
+          <!-- For Loop -->
+          <div class="types, card">
+            <b>For Loops:</b> for(expression 1; expression 2; expression 3) {
+            code block to be executed}
+            <ol>
+              <li>is executed (one time) before the execution of the code block.</li>
+              <li>defines the condition for executing the code block.</li>
+              <li>is executed (every time) after the code block has been executed.</li>
+            </ol>
+          </div>
+
+
+          <div class="types, card">
+            <b>For Of Loops:</b> for(<i>variable</i> of <i>array/object/string</i> { code block to be executed }
+
+            iterates over selected variable <b>items</b> until reaching the end
+          </div>
+
+          <div class="types, card">
+            <b>For In loop:</b>
+            for(<i>variable</i> in <i>objectName</i>)
+            cycles through <i>properties</i> in an <b>object</b>
+          </div>
+
+          <!-- While Loop -->
+          <div class="types, card">
+            <b>While Loops:</b> while(condition) {
+            code block to be executed }
+
+            Simpler than <b>for</b> loops with only one condition
+            more prone to create an <i>infinite loop</i>, crashing the browser tab
+          </div>
+
+
+
+          <!-- Do While Loop  -->
+          <div class="types, card">
+            <b>Do While Loops</b> <b>do</b> { code block to be executed }
+            while (condition);
+
+            executes the code block once <b>prior</b> to checking statement
+            then runs until condition is met
+          </div>
+
+
+
+        </ul>
+      </article>
+
+      <script src="../assets/JScripts/JavaScript_script.js"></script>
 </body>
 
 </html>
