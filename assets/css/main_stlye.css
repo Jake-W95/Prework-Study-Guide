@@ -5,14 +5,12 @@
   
   text-decoration: none;
 }
-
 body {
   height: 100%;
   width: 100%;
 
 
 }
-
 header,
 footer {
   width: auto;
@@ -22,21 +20,38 @@ footer {
   background-color: blue;
   color: white;
 }
-
-h1,
-h2,
-h3,
-h4 {
-  /* font-size: 150%; */
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
   margin-top: 5px;
   margin-bottom: 4px;
   text-align: center;
-
+}
+/* Card */
+.card {
+  width: 80%;
+  padding: 8px;
+  margin: 40px auto;
+  border: 5px solid gray;
+ 
+}
+/* Page Menu */
+.contents {
+  width: 40%;
+  margin: auto;
+  margin-top: 2ex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contents a {
+  width: 30%;
+  padding: 7px;
+  border: 2px solid #565656;
+  background-color: antiquewhite;
+  text-align: center;
 }
 
-a {
-  color: #565656;
-}
+/* Page Link Grid */
 .PLBox{
   display: flex;
   justify-content: center;
@@ -58,47 +73,41 @@ a {
     "javaS gits"
     "bash bootStrap";
 }
-
-#html {
-  grid-area: html;
-}
-
-#css {
-  grid-area: css;
-}
-
-#javaS {
-  grid-area: javaS;
-}
-
-#gits {
-  grid-area: gits;
-}
-
-#bash {
-  grid-area: bash;
-}
-
-
-
 .Page_links a {
   background-color: seagreen;
   color: white;
   border: 4px solid darkgreen;
 
 }
+#html {
+  grid-area: html;
+}
+#css {
+  grid-area: css;
+}
+#javaS {
+  grid-area: javaS;
+}
+#gits {
+  grid-area: gits;
+}
+#bash {
+  grid-area: bash;
+}
 
 #home {
   background-color: rgb(28, 94, 28);
   border: 4px solid rgb(27, 81, 51);
 }
-
- 
+a {
+  font-weight: bold;
+  color: #565656;
+}
 
 img {
   display: block;
-  height: 50px;
-  width: 50px;
+  height: 500px;
+  width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -110,10 +119,13 @@ ul {
 }
 
 
-.card {
-  width: 80%;
-  padding: 8px;
-  margin: 40px auto;
-  border: 5px solid gray;
- 
+
+.button{
+  width: 30%;
+  margin: auto;
+  font-weight: bold;
+  background-color: seagreen;
+  color: white;
+  border:4px solid darkgreen;
+  margin-bottom: 7px;
 }
