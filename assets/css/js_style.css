@@ -10,7 +10,8 @@
 }
 
 .button{
-    /* width: 25%; */
+    width: 30%;
+    margin: auto;
     background-color: seagreen;
     color: white;
     border:4px solid darkgreen;
