@@ -26,22 +26,22 @@
             <a href="../pages/bashpage.html" id="bash">Bash</a>
             <a href="../pages/bootstrappage.html" id="bootStrap">Bootstrap CSS</a>
         </nav>
-    
+
     </div>
 
     <main>
 
         <article class="card" id="gen_note">
-            <h2 class="headers">General Notes</h2>
-            <div>
+            <h2 class="headers">Head and Body</h2>
+            <div class="card">
                 <h3 class="header">HEAD</h3>
                 <ul>
                     <li>The HEAD element contains information about the webpage</li>
-                    <li>Information in the HEAD is not visible to the end user</li>
+                    <li>Information in the HEAD is not visible to the end user (excluding page title)</li>
                     <li>Information within HEAD is for the web browser to read and display the webpage properly</li>
                 </ul>
-
-
+            </div>
+            <div class="card">
                 <h3 class="header">BODY</h3>
                 <ul>
                     <li>The BODY element represents the visible content to the end user</li>
@@ -52,41 +52,85 @@
 
         <article class="card" id="elements">
             <h2 class="headers">ELEMENTS</h2>
-            <ul>
-                <li><b>!DOCTYPE</b> represents the document type, helping browsers correctly display the page</li>
-                <li><b>head</b> contains information for the browser, this information is not visible to the user.
-                    it contains such things as the page title (seen in the tab), character set (usually "UTF-8" for
-                    English speaking countries and links to CSS Stylesheets, among other things</li>
-                <li><b>title</b> defines the page's title</li>
-                <li><b>body</b> contains all of the visible html on a page. There can ne only one <b>body</b> per page
-                </li>
-                <li><b>header</b> creates a page header</li>
-                <li><b>footer</b> creates a page footer</li>
-                <li><b>h1 - h6</b> these elements create headings, with <b>h1</b> being the most important and <b>h6</b>
-                    being the least important
-                    Most browsers recognise headings and affect the text size accordingly</li>
-                <li><b>p</b> creates a new paragraph</li>
-                <li><b>a</b> creates a link. Links depend on having an <i>href</i> attribute inside of them with the
-                    link itself, for example: <i>a href="url_destination"</i></li>
-                <li><b>img</b> identifies an image, <b>img</b> elements must be paired with an <i>src</i> attribute, and
-                    should also contain an <i>alt</i> attribute. For example:
-                    <i>img src="Location_of_Image" alt="Image_descriptio"</i>
-                </li>
-                <li><b>ul</b> creates an <b>unordered list</b></li>
-                <li><b>ol</b> creates an <b>ordered list</b></li>
-                <li><b>li</b> creates <b>list elements</b> to be used inside ordered or unordered lists</li>
-                <li><b>section</b> is used to contain multiple elements in one place, usually because of linking themes
-                </li>
-                <li><b>div</b> creates a division, similar to <b>section</b></li>
-                <li><b>br</b> creates a line break</li>
-                <li><b>aside</b> defines content aside from page content</li>
-                <li><b>b</b> affects text making it <b>bold</b></li>
-                <li><b>i</b> <i>italicises</i> text</li>
-                <li><b>link</b> defines the relationship between an html document and an external resource (usually
-                    stylesheets)</li>
-                <li><b>nav</b> defines a navigation bar</li>
-                <li><b>span</b> defines a section within a document</li>
-            </ul>
+
+            <section>
+
+                <section class="card">
+                    <h3>Utility elements</h3>
+                    <ul>
+                        <li><b>!DOCTYPE</b> represents the document type, helping browsers correctly display the page
+                        </li>
+                        <li><b>head</b> contains information for the browser, this information is not visible to the
+                            user.
+                            it contains such things as the page title (seen in the tab), character set (usually "UTF-8"
+                            for
+                            English speaking countries and links to CSS Stylesheets, among other things</li>
+                        <li><b>title</b> defines the page's title</li>
+                        <li><b>body</b> contains all of the visible html on a page. There can ne only one <b>body</b>
+                            per page
+                        </li>
+                        <li><b>header</b> creates a page header</li>
+                        <li><b>footer</b> creates a page footer</li>
+                        <li><b>link</b> defines the relationship between an html document and an external resource
+                            (usually
+                            stylesheets)</li>
+                        <li><b>script</b> connects .html file to the specified javascript code (this should be placed at
+                            the <b>bottom</b> of the body</li>
+                        <li><b>a</b> creates a link. Links depend on having an <i>href</i> attribute inside of them with
+                            the
+                            link itself, for example: <i>a href="url_destination"</i></li>
+
+                    </ul>
+                </section>
+
+                <section class="card">
+                    <h3>Section elements (needs renaming)</h3>
+                    <li><b>main</b> creates container for main body of information on the page</li>
+                    <li><b>section</b> is used to contain multiple elements in one place, usually because of linking
+                        themes
+                    </li>
+                    <li><b>div</b> creates a division, similar to <b>section</b></li>
+                    <li><b>aside</b> defines content aside from page content</li>
+                    <li><b>nav</b> defines a navigation bar</li>
+                    <li><b>img</b> identifies an image, <b>img</b> elements must be paired with a <i>src</i> attribute,
+                        and
+                        should also contain an <i>alt</i> attribute. For example:
+                        <i>img src="Location_of_Image" alt="Image_description"</i>
+                    </li>
+
+                </section>
+
+                <section class="card">
+                    <ul>
+                        <h3>Text elements</h3>
+                        <li><b>h1 - h6</b> these elements create headings, with <b>h1</b> being the most important and
+                            <b>h6</b> being the least important Most browsers recognise headings and affect the text
+                            size accordingly
+                        </li>
+                        <li><b>p</b> creates a new paragraph</li>
+                        <li><b>b</b> affects text making it <b>bold</b></li>
+                        <li><b>i</b> <i>italicises</i> text</li>
+                        <li><b>br</b> creates a line break</li>
+                        <li><b>ul</b> creates an <b>unordered list</b></li>
+                        <li><b>ol</b> creates an <b>ordered list</b></li>
+                        <li><b>li</b> creates <b>list elements</b> to be used inside ordered or unordered lists</li>
+                        <li><b>span</b> defines a section within a document</li>
+
+                    </ul>
+                </section>
+
+
+            </section>
+
+
+
+
+
+
+
+
+
+
         </article>
 
         <article class="card" id="atts">
