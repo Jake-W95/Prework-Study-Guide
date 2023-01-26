@@ -33,37 +33,18 @@ for(tog of objectToggle){
 // head body section (html)
 
 const headBodyToggle = document.getElementsByClassName('headBodyToggle')
+// head section 
+const showBodyBtn = document.getElementById('showBodyBtn');
+const headTxt = document.getElementById('headTxt');
+// body section 
+const showHeadBtn = document.getElementById('showHeadBtn');
+const bodyTxt = document.getElementById('bodyTxt')
 
-const headSection = document.getElementById('head');
-const bodySection = document.getElementById('body');
-
-
-for(btn of headBodyToggle){
-btn.addEventListener('click', function(){
-    
-    if(headSection.classList.contains('show')){
-    headSection.classList.remove('show');
-    headSection.classList.add('hide');
-    
-    bodySection.classList.remove('hide');
-    bodySection.classList.add('show');
-    return
-    }
-    if(headSection.classList.contains('hide')){
-        headSection.classList.remove('hide');
-        headSection.classList.add('show');
-        
-        bodySection.classList.remove('show');
-        bodySection.classList.add('hide');
-        
-        }
+for(tog of headBodyToggle){
+    tog.addEventListener('click', function(){
+        toggle(showBodyBtn, headTxt, showHeadBtn, bodyTxt)
     })
-
 }
-
-
-
-
 
 
 
