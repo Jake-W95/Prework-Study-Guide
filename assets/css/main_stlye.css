@@ -1,8 +1,8 @@
 :root {
   --main: rgb(184, 215, 255);
-  --secondary: rgb(143, 179, 226);
+  --secondary: rgb(155, 190, 235);
   --border: rgb(118, 154, 202);
-  --text: black;
+  --body: rgb(223, 236, 253);
 }
 
 
@@ -10,84 +10,92 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  
   text-decoration: none;
+  color: black;
+
 }
+
 body {
   height: 100%;
   width: 100%;
-
-
+background-color: var(--body);
 }
+
 header,
 footer {
-  width: auto;
-  height: 120px;
+  height: 3.8rem;
   padding: 10px;
-  
+  margin-bottom: 5px;
   background-color: var(--main);
   color: var(--text);
 }
+
 /* Headers */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 5px;
   margin-bottom: 4px;
   text-align: center;
 }
+
 a {
   font-weight: bold;
   font-style: normal;
-  color: var(--text)
+  padding: .3rem;
+  margin: .09rem;
+  text-align: center;
+  background-color: var(--main);
+
 }
+
+a:hover {
+  font-style: italic;
+  background-color: rgb(184, 222, 255);
+}
+
 .border {
-  border: 5px solid var(--border);
+  border: 3px solid var(--border);
 }
+
 /* Card */
 .card {
   width: 80%;
   padding: 8px;
   margin: 40px auto;
 }
+
 .outer {
-  background-color: var(--main);
-}
-.inner {
   background-color: var(--secondary);
 }
+
+.inner {
+  background-color: var(--main);
+}
+
 /* Page Menu */
 .contents {
-  width: 40%;
+  width: 15%;
   margin: auto;
   margin-top: 2ex;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 }
-.contents a {
-  width: 30%;
-  padding: 7px;
-  
-  background-color: var(--main);
-  text-align: center;
-  }
-  .contents a:hover {
-    background-color: var(--secondary);
-    font-style: italic;
-  }
 
 /* Page Link Grid */
-.PLBox{
+.PLBox {
   display: flex;
   justify-content: center;
 }
+
 .Page_links {
-  /* box-shadow: 5px 10px #888888; */
   display: grid;
   width: 80%;
-  /* height: fit-content; */
   padding: .5 rem;
-  text-align: center;
-  /* margin: auto; */
   margin-top: 6px;
   background-color: var(--secondary);
   grid-template: 3 / 2;
@@ -97,27 +105,24 @@ a {
     "javaS gits"
     "bash bootStrap";
 }
-.Page_links a {
-  background-color: var(--secondary);
-  color: var(--text);
-  
 
-}
-.Page_links a:hover{
-  background-color: var(--main) ;
-}
+
 #html {
   grid-area: html;
 }
+
 #css {
   grid-area: css;
 }
+
 #javaS {
   grid-area: javaS;
 }
+
 #gits {
   grid-area: gits;
 }
+
 #bash {
   grid-area: bash;
 }
@@ -140,12 +145,12 @@ ul {
 
 
 
-.button{
+.button {
   width: 30%;
   margin: auto;
   font-weight: bold;
   background-color: var(--secondary);
   color: var(--text);
-  
+
   margin-bottom: 7px;
 }
