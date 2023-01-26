@@ -1,5 +1,5 @@
 
-// Array Section 
+// Array Section (javascript)
 const arrayToggle = document.getElementsByClassName('arrayToggle');
 // show info
 const arrMethBtn = document.getElementById('arrMethBtn');
@@ -8,7 +8,7 @@ const arrInfoTxt = document.getElementById('arrInfoTxt');
 const arrInfoBtn = document.getElementById('arrInfoBtn');
 const arrMethTxt = document.getElementById('arrMethTxt');
 
-// Toogle Array Sec
+// Toogle Array Sec (javascript)
 for (tog of arrayToggle) {
     tog.addEventListener('click', function () {
         toggle(arrMethBtn, arrInfoTxt, arrInfoBtn, arrMethTxt)
@@ -28,6 +28,40 @@ for(tog of objectToggle){
         toggle(objMethBtn, objInfoTxt, objInfoBtn, objMethTxt)
     })
 }
+
+
+// head body section (html)
+
+const headBodyToggle = document.getElementsByClassName('headBodyToggle')
+
+const headSection = document.getElementById('head');
+const bodySection = document.getElementById('body');
+
+
+for(btn of headBodyToggle){
+btn.addEventListener('click', function(){
+    
+    if(headSection.classList.contains('show')){
+    headSection.classList.remove('show');
+    headSection.classList.add('hide');
+    
+    bodySection.classList.remove('hide');
+    bodySection.classList.add('show');
+    return
+    }
+    if(headSection.classList.contains('hide')){
+        headSection.classList.remove('hide');
+        headSection.classList.add('show');
+        
+        bodySection.classList.remove('show');
+        bodySection.classList.add('hide');
+        
+        }
+    })
+
+}
+
+
 
 
 
