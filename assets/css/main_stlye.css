@@ -42,23 +42,29 @@ h6 {
   text-align: center;
 }
 
-a {
+a,
+button {
   font-weight: bold;
   font-style: normal;
   padding: .3rem;
-  margin: .09rem;
   text-align: center;
   background-color: var(--main);
 
 }
 
-a:hover {
+a:hover,
+button:hover {
   font-style: italic;
   background-color: rgb(184, 222, 255);
 }
 
+
 .border {
   border: 3px solid var(--border);
+}
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Card */
@@ -81,8 +87,7 @@ a:hover {
   width: 15%;
   margin: auto;
   margin-top: 2ex;
-  display: flex;
-  flex-direction: column;
+
   align-items: stretch;
 }
 
@@ -144,13 +149,3 @@ ul {
 }
 
 
-
-.button {
-  width: 30%;
-  margin: auto;
-  font-weight: bold;
-  background-color: var(--secondary);
-  color: var(--text);
-
-  margin-bottom: 7px;
-}
