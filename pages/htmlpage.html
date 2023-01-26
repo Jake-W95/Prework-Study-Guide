@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML</title>
     <link rel="stylesheet" href="../assets/css/main_stlye.css">
-    <!-- <link rel="stylesheet" href="assets/css/html-style.css"> -->
+    
 </head>
 
 <body>
@@ -17,17 +17,17 @@
         </h1>
 
     </header>
-    <div class="PLBox">
-        <nav class="Page_links">
-            <a href="../index.html" id="home">HOME</a>
+    <nav class="PLBox">
+        <nav class="Page_links ">
+            <a  href="../index.html" id="home">HOME</a>
             <a href="../pages/csspage.html" id="css"> CSS</a>
             <a href="../pages/javascriptpage.html" id="js">JavaScript</a>
             <a href="../pages/githubpage.html" id="git">GitHub & GitLab</a>
             <a href="../pages/bashpage.html" id="bash">Bash</a>
             <a href="../pages/bootstrappage.html" id="bootStrap">Bootstrap CSS</a>
         </nav>
-    </div>
-    <nav class="contents">
+    </nav>
+    <nav class="contents column">
         <a href="#HeadBody">Head and Body</a>
         <a href="#elements">Elements</a>
         <a href="#atts">Attributes</a>
@@ -38,9 +38,9 @@
 
     <main>
 
-        <article class="card" id="HeadBody">
+        <section class="card outer">
             <h2>Head and Body</h2>
-            <div class="card">
+            <div class="card inner">
                 <h3>HEAD</h3>
                 <ul>
                     <li>The &ltHEAD&gt element contains information about the webpage</li>
@@ -48,21 +48,21 @@
                     <li>Information within &ltHEAD&gt is for the web browser to read and display the webpage properly</li>
                 </ul>
             </div>
-            <div class="card">
+            <div class="card inner">
                 <h3>BODY</h3>
                 <ul>
                     <li>The &ltBODY&gt element represents the visible content to the end user</li>
                     <li>HTML acts as the foundation of webpages</li>
                 </ul>
             </div>
-        </article>
+        </section>
 
-        <article class="card" id="elements">
+        <section class="card outer" id="elements">
             <h2>ELEMENTS</h2>
 
-            <section>
+            
 
-                <section class="card">
+                <section class="card inner">
                     <h3>Utility elements</h3>
                     <ul>
                         <li>!DOCTYPE</b> represents the document type, helping browsers correctly display the page</li>
@@ -89,7 +89,7 @@
                     </ul>
                 </section>
 
-                <section class="card">
+                <section class="card inner">
                     <h3>Section elements (needs renaming)</h3>
                     <li>&ltmain&gt creates container for main body of information on the page</li>
                     <li>&ltsection&gt is used to contain multiple elements in one place, usually because of linking
@@ -107,7 +107,7 @@
 
                 </section>
 
-                <section class="card">
+                <section class="card inner">
                     <ul>
                         <h3>Text elements</h3>
                         <li>&lth1&gt - &lth6&gt these elements create headings, with &lth1&gt being the most important and
@@ -125,12 +125,12 @@
 
                     </ul>
                 </section>
-            </section>
-        </article>
+            
+        </section>
 
-        <article class="card" id="atts">
+        <section class="card outer" id="atts">
             <h2>ATTRIBUTES</h2>
-            <section class="card">
+            <section class="card inner">
                 <h3>Global attributes</h3>
                 <ul>
                     <li><b>class</b> sets an identifying class tag, multiple items can have the same class.
@@ -143,13 +143,13 @@
                     ducimus repellat doremque ut sit! Esse impedit ad nihil vel cum tempora dicta exercitationem magnam!
                     Aliquid?</p>
             </section>
-        </article>
+        </section>
 
 
 
 
     </main>
-
+<script src="../assets/JScripts/styleScript.js"></script>
 </body>
 
 </html>
