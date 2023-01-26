@@ -80,12 +80,12 @@
     </section>
     <section class="card outer">
       <h2>Arrays</h2>
-      <button type="button" class="button" id="arrayMethodButton" style="display:block;">Press for
+      
+      <button type="button" class="button arrayToggle show" id="arrMethBtn">Press for
         Array Methods</button>
 
-      <section class="inner">
-        
-          <ul>
+      <section class="card inner show" id="arrInfoTxt">
+                <ul>
             <li><b>var/let/const</b> <i>arrayName</i> = <i>[element1, element2, ... elementN]</i>:
               <p> <b>Arrays</b> are variables that contain multiple <i>elements</i> <br>
                 <b>Arrays</b> can hold any type of <i>Primitive Value (string, number, variable,</i>
@@ -98,17 +98,13 @@
               </ul>
             </li>
           </ul>
-
-
-
-        
       </section>
 
       <section id="arrayMethodSect">
-        <button type="button" class="button" id="arrayInfoButton" style="display:none;">Press forArray
+        <button type="button" class="button arrayToggle hide" id="arrInfoBtn">Press forArray
           Information</button>
-        <div>
-          <ul style="display: none;">
+        <div class="inner hide" id="arrMethTxt">
+          <ul >
             <li><i>array</i>.toString(): Converts an <i>array</i> into a comma-seperated string of values:
               <b>value1,value2,value3</b>;
             </li>

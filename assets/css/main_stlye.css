@@ -110,6 +110,12 @@ button:hover {
     "javaS gits"
     "bash bootStrap";
 }
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
 
 
 #html {
