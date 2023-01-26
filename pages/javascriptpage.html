@@ -152,10 +152,10 @@
     <section class="card outer" id="objects">
       <h2>Objects</h2>
 
-      <button type="button" class="button" id="objectMethodButton" style="display:block;">Press for Object
+      <button type="button" class="button objectToggle show " id="objMethBtn">Press for Object
         Methods </button>
 
-      <section class="inner" id="objectInfo">
+      <section class="inner show" id="objInfoTxt">
         <p >
           <b>var/let/const</b> <i>objectName</i> = { <br>
           propertyNameString: "value", <br>
@@ -184,9 +184,9 @@
     
       </section>
 
-      <button type="button" class="button" id="objectInfoButton" style="display:none;">Press for Object
+      <button type="button" class="button objectToggle hide" id="objInfoBtn">Press for Object
         Information</button>
-      <section id='objectMethod' style='display:none'>
+      <section class="hide" id='objMethTxt'>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sed quae eveniet quos optio voluptas cum
           voluptatum sequi tempore! Fugiat accusamus aliquam eius porro repellat assumenda ullam omnis debitis
@@ -326,7 +326,7 @@
     </section>
 
     <script src="../assets/JScripts/styleScript.js"></script>
-    <script src="../assets/JScripts/JavaScript_script.js"></script>
+    <script src="../assets/JScripts/toggleScript.js"></script>
 </body>
 
 </html>
