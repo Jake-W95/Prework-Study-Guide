@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/css/main_stlye.css">
-  <link rel="stylesheet" href="../assets/css/js_style.css">
+  <!-- <link rel="stylesheet" href="../assets/css/js_style.css"> -->
   <title>JavaScript</title>
 </head>
 
@@ -15,7 +15,7 @@
     <h1>All About JavaScript</h1>
   </header>
 
-  <div class="PLBox">
+  <article class="PLBox">
     <nav class="Page_links">
       <a href="../index.html" id="home">HOME</a>
       <a href="../pages/htmlpage.html" id="html">HTML</a>
@@ -24,7 +24,7 @@
       <a href="../pages/bashpage.html" id="bash">Bash</a>
       <a href="../pages/bootstrappage.html" id="bootStrap">Bootstrap CSS</a>
     </nav>
-  </div>
+  </article>
 
   <nav class="contents">
     <a href="#variables">Variables</a>
@@ -39,101 +39,114 @@
 
   <main>
 
-    <section class="card">
+    <section class="card outer">
       <h1>Basic data types in JS</h1>
-      <ul>
-        <li><b>String:</b> Strings are defined by quotations, <b>'anything within quotes is a string.'</b></li>
-        <li><b>Number:</b> Numbers are just numbers: <b>0, 1, 5, 1495</b></li>
-        <li><b>Boolean:</b> Booleans are a value of either <b>true</b> or <b>false</b></li>
-        <li><b>The other one</b> I forget it at the moment...</li>
-      </ul>
+      <div class="inner">
+        <ul>
+          <li><b>String:</b> Strings are defined by quotations, <b>'anything within quotes is a string.'</b></li>
+          <li><b>Number:</b> Numbers are just numbers: <b>0, 1, 5, 1495</b></li>
+          <li><b>Boolean:</b> Booleans are a value of either <b>true</b> or <b>false</b></li>
+          <li><b>The other one</b> I forget it at the moment...</li>
+        </ul>
+      </div>
     </section>
 
-    <section class="card" id="variables">
+    <section class="card outer">
       <h1>Variables</h1>
       <h3><b>Variables</b> store data <i>values</i></h3>
+      <div class="card inner">
+        <ul>
+          <h2> Basic Variable Types:</h2>
+          <li><b>var</b> <i>varName</i> = <i>value</i>:
+            <p> Declares a variable</p>
+          </li>
 
-      <ul class="types, card">
-        <h2> Basic Variable Types:</h2>
-        <li><b>var</b> <i>varName</i> = <i>value</i>:
-          <p> Declares a variable</p>
-        </li>
+          <li><b>let</b> <i>varName</i> = <i>value</i>:
+            <p> Variables defined with let cannot be Redeclared.
+              Variables defined with let must be Declared before use.
+              Variables defined with let have Block Scope.</p>
+          </li>
 
-        <li><b>let</b> <i>varName</i> = <i>value</i>:
-          <p> Variables defined with let cannot be Redeclared.
-            Variables defined with let must be Declared before use.
-            Variables defined with let have Block Scope.</p>
-        </li>
-
-        <li><b>const</b> <i>varName</i> = <i>value</i>:
-          <p>
-            const variables cannot be changed
-            const variables must be assigned a value when they are declared
-          </p>
-        </li>
-      </ul>
-    </section>
-    <section class="card" id='arrays'>
-      <h2>Arrays</h2>
-
-      <section id="arrayInfoSect">
-        <button type="button" class="button" id="arrayMethodButton" style="display:block;">Press for
-          Array Methods</button>
-
-        <ul id="arrayInfo">
-          <li><b>var/let/const</b> <i>arrayName</i> = <i>[element1, element2, ... elementN]</i>:
-            <p> <b>Arrays</b> are variables that contain multiple <i>elements</i> <br>
-              <b>Arrays</b> can hold any type of <i>Primitive Value (string, number, variable,</i>
+          <li><b>const</b> <i>varName</i> = <i>value</i>:
+            <p>
+              const variables cannot be changed
+              const variables must be assigned a value when they are declared
             </p>
-            <ul>
-              <li>Arrays are index based, starting on <b>0</b> ; the first element = 0, the second = 1, the third</li>
-              <li>To specify an index number in an array syntax is: <i>arrayName</i>[indexNumber] </li>
-              <li>Arrays can contain arrays like any other element</li>
-              <li>To specify a <b>nested</b> array the syntax is: <i>arrayName</i>[1stIndex#][2ndIndex#]</li>
-            </ul>
           </li>
         </ul>
+
+
+
+      </div>
+    </section>
+    <section class="card outer">
+      <h2>Arrays</h2>
+
+      <section class="inner">
+        <button type="button" class="button" id="arrayMethodButton" style="display:block;">Press for
+          Array Methods</button>
+        
+          <ul>
+            <li><b>var/let/const</b> <i>arrayName</i> = <i>[element1, element2, ... elementN]</i>:
+              <p> <b>Arrays</b> are variables that contain multiple <i>elements</i> <br>
+                <b>Arrays</b> can hold any type of <i>Primitive Value (string, number, variable,</i>
+              </p>
+              <ul>
+                <li>Arrays are index based, starting on <b>0</b> ; the first element = 0, the second = 1, the third</li>
+                <li>To specify an index number in an array syntax is: <i>arrayName</i>[indexNumber] </li>
+                <li>Arrays can contain arrays like any other element</li>
+                <li>To specify a <b>nested</b> array the syntax is: <i>arrayName</i>[1stIndex#][2ndIndex#]</li>
+              </ul>
+            </li>
+          </ul>
+
+
+
+        
       </section>
 
       <section id="arrayMethodSect">
         <button type="button" class="button" id="arrayInfoButton" style="display:none;">Press forArray
           Information</button>
+        <div>
+          <ul style="display: none;">
+            <li><i>array</i>.toString(): Converts an <i>array</i> into a comma-seperated string of values:
+              <b>value1,value2,value3</b>;
+            </li>
+            <li><i>array</i>.join('___'): see <i>toString</i>, but with specified 'delimiter' in parentheses:
+              <b>value1___value2___value3</b>;
+            </li>
+            <li><i>concatArray</i> = array1.concat(array2, array3): concatenates specified <i>arrays</i> into one new
+              array;
+              <br>
+              <i>concatArray</i> = [array1A, array1B, array1C, array2A,array2B, array3A, array3B, etc.]
+            </li>
+            <li><i>array</i>.splice(index#, #toRemove, 'addItem1', 'addItem2'): removes a selected number fo items from
+              an
+              <i>array</i> an (optional) adds new items in place;
+            </li>
+            <li><i>newArray</i> = <i>array</i>.slice(index#, #toRemove): cuts items from the specified <i>array</i> and
+              returns them to a <i>newArray</i></li>
+            <li><i>Array</i>.indexOf('item/value'): Finds the <b>first</b> index # of an array that contains specified
+              value
+            </li>
+            <li><i>Array</i>.lastIndexOf('item/value'): Finds the <b>last</b> index # of an array to contain specified
+              value
+            </li>
+            <li><i>Array</i>.forEach(): Loops through the given array, and calls the given call-back function for each
+              of
+              the elements in the array.</li>
+            <li><i>Array</i>.map(): The map function takes in a call-back function as argument, and executes that
+              function
+              on each element of the array it is working on. It maps each of the return values of the call-back into a
+              new
+              array. It does not mutate the original array.</li>
+            <li><i>Array</i>.filter():The filter method is used to filter out array elements that fail a boolean test.
+              Only elements that pass the test are allowed through into the new return array.</li>
+          </ul>
 
-        <ul id="arrayMethod" style="display: none;">
-          <li><i>array</i>.toString(): Converts an <i>array</i> into a comma-seperated string of values:
-            <b>value1,value2,value3</b>;
-          </li>
-          <li><i>array</i>.join('___'): see <i>toString</i>, but with specified 'delimiter' in parentheses:
-            <b>value1___value2___value3</b>;
-          </li>
-          <li><i>concatArray</i> = array1.concat(array2, array3): concatenates specified <i>arrays</i> into one new
-            array;
-            <br>
-            <i>concatArray</i> = [array1A, array1B, array1C, array2A,array2B, array3A, array3B, etc.]
-          </li>
-          <li><i>array</i>.splice(index#, #toRemove, 'addItem1', 'addItem2'): removes a selected number fo items from
-            an
-            <i>array</i> an (optional) adds new items in place;
-          </li>
-          <li><i>newArray</i> = <i>array</i>.slice(index#, #toRemove): cuts items from the specified <i>array</i> and
-            returns them to a <i>newArray</i></li>
-          <li><i>Array</i>.indexOf('item/value'): Finds the <b>first</b> index # of an array that contains specified
-            value
-          </li>
-          <li><i>Array</i>.lastIndexOf('item/value'): Finds the <b>last</b> index # of an array to contain specified
-            value
-          </li>
-          <li><i>Array</i>.forEach(): Loops through the given array, and calls the given call-back function for each
-            of
-            the elements in the array.</li>
-          <li><i>Array</i>.map(): The map function takes in a call-back function as argument, and executes that
-            function
-            on each element of the array it is working on. It maps each of the return values of the call-back into a
-            new
-            array. It does not mutate the original array.</li>
-          <li><i>Array</i>.filter():The filter method is used to filter out array elements that fail a boolean test.
-            Only elements that pass the test are allowed through into the new return array.</li>
-        </ul>
+
+        </div>
 
 
       </section>
@@ -141,14 +154,14 @@
 
     </section>
 
-    <section class="card" id="objects">
+    <section class="card outer" id="objects">
       <h2>Objects</h2>
 
       <button type="button" class="button" id="objectMethodButton" style="display:block;">Press for Object
         Methods </button>
 
-      <section id="objectInfo">
-        <p>
+      <section class="inner" id="objectInfo">
+        <p >
           <b>var/let/const</b> <i>objectName</i> = { <br>
           propertyNameString: "value", <br>
           propertyNameNumber: 1234, <br>
@@ -156,21 +169,24 @@
           propertyNameArray: [item1, item2, ... itemN]
         </p>
 
-        <ul>
-          <br>
-          <li><b>Objects</b> are variables that contain multiple values, written as <b>propertyName:value</b> </li>
-          <li><i>Properties</i> can store more than one value by using an <b>array</b></li>
-          <li>To specify a <i>property</i> one can use either:
-            <ol>
-              <li><b>Bracket notiation:</b> objectName[property]</li>
-              <p>OR </p>
-              <li><b>Dot notation:</b> objectName.property</li>
-              <h2>Objects are <b>NOT</b> index based</h2>
-              <h3>Only <i>property</i> names will work</h3>
-            </ol>
-          </li>
-        </ul>
-        </li>
+  <ul>
+    <br>
+    <li><b>Objects</b> are variables that contain multiple values, written as <b>propertyName:value</b> </li>
+    <li><i>Properties</i> can store more than one value by using an <b>array</b></li>
+    <li>To specify a <i>property</i> one can use either:
+      <ol>
+        <li><b>Bracket notiation:</b> objectName[property]</li>
+        <p>OR </p>
+        <li><b>Dot notation:</b> objectName.property</li>
+        <h2>Objects are <b>NOT</b> index based</h2>
+        <h3>Only <i>property</i> names will work</h3>
+      </ol>
+    </li>
+  </ul>
+
+
+
+    
       </section>
 
       <button type="button" class="button" id="objectInfoButton" style="display:none;">Press for Object
@@ -186,7 +202,7 @@
 
 
     </section>
-    <article class="card" id="loops">
+    <section class="card outer " id="loops">
       <h1>Loops</h1>
       <h3>
         <b>Loops</b> run a code block repeatedly until a specific <i>condition</i> is met</p>
@@ -195,7 +211,7 @@
       <!-- <ul id="loop_list"> -->
 
       <!-- For Loop -->
-      <div class="types, card">
+      <div class="card inner">
         <h3>
           <b>For Loops:</b>
         </h3>
@@ -209,7 +225,7 @@
         </ol>
       </div>
 
-      <div class="types, card">
+      <div class="card inner">
         <h3>
           <b>For Of Loops:</b>
 
@@ -222,7 +238,7 @@
         </p>
       </div>
 
-      <div class="types, card">
+      <div class="card inner">
         <h3>
           <b>For In loop:</b>
 
@@ -238,7 +254,7 @@
       </div>
 
       <!-- While Loop -->
-      <div class="types, card">
+      <div class="card inner">
         <h3>
           <b>While Loops:</b>
         </h3>
@@ -256,7 +272,7 @@
 
 
       <!-- Do While Loop  -->
-      <div class="types, card">
+      <div class="card inner">
         <h3>
           <b>Do While Loops</b>
         </h3>
@@ -274,42 +290,47 @@
 
 
       <!-- </ul> -->
-    </article>
-    <section class="card" id="DOM">
+    </section>
+    <section class="card outer" id="DOM">
       <h1>HTML DOM</h1>
       <h3>Document Object Model</h3>
-      <div id="DomGenInfo">
+      <div class="card inner" id="DomGenInfo">
         <img src="../assets/images/html-dom-tree.webp" alt="HTML DOM Tree">
-        <ul>
-          <li><b>Every</b> HTML elemement is an <b>object</b> on the DOM
-            <ul>
-              <li>These objects all share the same <b>properties</b> from the browser</li>
-            </ul>
-          </li>
-          <li>Navigate through the DOM using <b>dot notation</b> eg <i>document.body.div.text</i></li>
-
-        </ul>
+        <div>
+          <ul>
+            <li><b>Every</b> HTML elemement is an <b>object</b> on the DOM
+              <ul>
+                <li>These objects all share the same <b>properties</b> from the browser</li>
+              </ul>
+            </li>
+            <li>Navigate through the DOM using <b>dot notation</b> eg <i>document.body.div.text</i></li>
+  
+          </ul>
+        </div>
 
       </div>
-      <section class="card" id="DomPropMeth">
+      <section class="card inner" id="DomPropMeth">
         <h3>DOM Properties and Methods</h3>
-      
-          <h4><b>.addEventListener()</b>Attaches an <b>event handler</b> to an object</h4> 
+
+        <h4><b>.addEventListener()</b>Attaches an <b>event handler</b> to an object</h4>
         <button type="button" class="button" id="showEventsButton" style="display:block;">Show Events List</button>
         <button type="button" class="button" id="hideEventsButton" style="display:none;">Hide Events List</button>
 
         <section id="events" style="display:none;">
           <h5>Events</h5>
-          <ul>
-            <li>click: an element is clicked on </li>
-            <li>keypress: a key is pressed</li>
-            <li>mouseenter: the pointer is moved onto an element</li>
-          </ul>
+          <div>
+            <ul>
+              <li>click: an element is clicked on </li>
+              <li>keypress: a key is pressed</li>
+              <li>mouseenter: the pointer is moved onto an element</li>
+            </ul>
+          </div>
         </section>
       </section>
 
     </section>
 
+    <script src="../assets/JScripts/main_script.js"></script>
     <script src="../assets/JScripts/JavaScript_script.js"></script>
 </body>
 
