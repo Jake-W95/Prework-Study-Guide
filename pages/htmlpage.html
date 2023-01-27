@@ -70,10 +70,15 @@
 
         <section class="card outer" id="elements">
             <h2>ELEMENTS</h2>
+            <nav class="card row">
+                <button class="select" id="utilityBtn">Utility</button>
+                <button class="select" id="sectionBtn">Sections</button>
+                <button class="select" id="textBtn">Text</button>
+            </nav>
 
             
 
-                <section class="card inner">
+                <section class="card inner show" id="utilitySec">
                     <h3>Utility elements</h3>
                     <ul>
                         <li>!DOCTYPE</b> represents the document type, helping browsers correctly display the page</li>
@@ -100,8 +105,8 @@
                     </ul>
                 </section>
 
-                <section class="card inner">
-                    <h3>Section elements (needs renaming)</h3>
+                <section class="card inner hide" id="sectionSec">
+                    <h3>Section elements</h3>
                     <li>&ltmain&gt creates container for main body of information on the page</li>
                     <li>&ltsection&gt is used to contain multiple elements in one place, usually because of linking
                         themes
@@ -118,7 +123,7 @@
 
                 </section>
 
-                <section class="card inner">
+                <section class="card inner hide" id="textSec">
                     <ul>
                         <h3>Text elements</h3>
                         <li>&lth1&gt - &lth6&gt these elements create headings, with &lth1&gt being the most important and
@@ -149,6 +154,16 @@
                     <li><b>id</b> sets an identyfing ID tag, only one item can use this ID (if multiple elemements use the same ID only the first one will be recognized.
                     shortcut: '#' after writing element</li>
                     <li><b>style</b> specifies inline css on an element</li>
+                    <li>The <b>data-*</b> attribute is used to store custom data private to the page or application.
+
+                        The data-* attribute gives us the ability to embed custom data attributes on all HTML elements.
+                        
+                        The stored (custom) data can then be used in the page's JavaScript to create a more engaging user experience (without any Ajax calls or server-side database queries).
+                        
+                        The data-* attribute consist of two parts:
+                        
+                        The attribute name should not contain any uppercase letters, and must be at least one character long after the prefix "data-"
+                        The attribute value can be any string</li>
                 </ul>
                 <p>Lorem ipsum dor sit amet consectetur adipisicing elit. Minima magnam quod itaque optio vuptatem
                     ducimus repellat doremque ut sit! Esse impedit ad nihil vel cum tempora dicta exercitationem magnam!
@@ -162,6 +177,7 @@
     </main>
 <script src="../assets/JScripts/styleScript.js"></script>
 <script src="../assets/JScripts/toggleScript.js"></script>
+<script src="../assets/JScripts/selectScript.js"></script>
 
 
 
