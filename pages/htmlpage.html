@@ -71,14 +71,14 @@
         <section class="card outer" id="elements">
             <h2>ELEMENTS</h2>
             <nav class="card row">
-                <button class="select">Utility</button>
-                <button class="select">Sections</button>
-                <button class="select">Text</button>
+                <button class="select" id="utilityBtn">Utility</button>
+                <button class="select" id="sectionBtn">Sections</button>
+                <button class="select" id="textBtn">Text</button>
             </nav>
 
             
 
-                <section class="card inner">
+                <section class="card inner show" id="utilitySec">
                     <h3>Utility elements</h3>
                     <ul>
                         <li>!DOCTYPE</b> represents the document type, helping browsers correctly display the page</li>
@@ -105,8 +105,8 @@
                     </ul>
                 </section>
 
-                <section class="card inner">
-                    <h3>Section elements (needs renaming)</h3>
+                <section class="card inner hide" id="sectionSec">
+                    <h3>Section elements</h3>
                     <li>&ltmain&gt creates container for main body of information on the page</li>
                     <li>&ltsection&gt is used to contain multiple elements in one place, usually because of linking
                         themes
@@ -123,7 +123,7 @@
 
                 </section>
 
-                <section class="card inner">
+                <section class="card inner hide" id="textSec">
                     <ul>
                         <h3>Text elements</h3>
                         <li>&lth1&gt - &lth6&gt these elements create headings, with &lth1&gt being the most important and
@@ -167,6 +167,7 @@
     </main>
 <script src="../assets/JScripts/styleScript.js"></script>
 <script src="../assets/JScripts/toggleScript.js"></script>
+<script src="../assets/JScripts/selectScript.js"></script>
 
 
 
