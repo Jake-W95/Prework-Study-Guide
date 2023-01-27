@@ -66,6 +66,10 @@ button:hover {
   display: flex;
   flex-direction: column;
 }
+.row {
+  display: flex;
+  justify-content: space-around;
+}
 
 /* Card */
 .card {
@@ -109,6 +113,9 @@ button:hover {
     "html css"
     "javaS gits"
     "bash bootStrap";
+}
+.select {
+  width: 30%
 }
 .hide{
   display: none;
