@@ -33,9 +33,3 @@ loopFunc (doWhileLoopBtn, 4, 0,1,2,3)
 
 
 
-// for(i = 0; i < btn.length--; i++){
-// btn[i].addEventListener('click', () => {
-//     sec[i].classList.replace('hide', 'show');
-//     sec[!i].classList.replace('show', 'hide')
-// })
-// }
