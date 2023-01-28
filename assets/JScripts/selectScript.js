@@ -6,6 +6,9 @@ const utilitySec = document.getElementById('utilitySec');
 const sectionSec = document.getElementById('sectionSec');
 const textSec = document.getElementById('textSec');
 
+
+
+
 utilityBtn.addEventListener('click', function () {
     utilitySec.classList.replace('hide', 'show');
     sectionSec.classList.replace('show', 'hide');
@@ -23,3 +26,6 @@ textBtn.addEventListener('click', function () {
     sectionSec.classList.replace('show', 'hide');
     textSec.classList.replace('hide', 'show')
 })
+
+
+
