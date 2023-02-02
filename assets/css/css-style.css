@@ -1,6 +1,6 @@
 
 
-#masterGrid {
+/* #masterGrid {
 padding-top: 20px;
     display: grid;
     grid-template-columns:repeat(6, 1fr);
@@ -10,15 +10,15 @@ padding-top: 20px;
     grid-template-areas:       
         /* "header header header header header header" */
         /* "links links links links links links" */
-        "gennotes gennotes attribs attribs attribs attribs"
-        "break break break break break break"
+        /* "gennotes gennotes attribs attribs attribs attribs"
+        
         "boxnotes boxnotes boxnotes boxim boxim boxim"
-        "break2 break2 break2 break2 break2 break2"
+        
         "flexbox flexbox flexbox grids grids grids"
-        "footer footer footer footer footer footer";
-}
+        "footer footer footer footer footer footer"; */
+/* } */
     
-  
+   
 
 #gridHeader {
     grid-area: header;
